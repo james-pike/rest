@@ -1,6 +1,8 @@
 "use client";
 
 import type {NavbarProps} from "@nextui-org/react";
+import { RiRestaurantFill } from "react-icons/ri";
+
 
 import React from "react";
 import {
@@ -57,7 +59,7 @@ export default function BasicNavbar(props: NavbarProps) {
         "data-[active=true]:after:right-0",
         "data-[active=true]:after:h-[2px]",
         "data-[active=true]:after:rounded-[2px]",
-        "data-[active=true]:after:bg-primary",
+        "data-[active=true]:after:bg-foreground",
 
       ]
       }}
@@ -72,7 +74,7 @@ export default function BasicNavbar(props: NavbarProps) {
       <NavbarBrand>
       <div className="rounded-full py-0 text-background">
               <img
-                className="h-20 w-auto"
+                className="h-20 w-auto pt-0"
                 src="./images/logo.png"
                 alt="Logo"
               />
@@ -81,32 +83,31 @@ export default function BasicNavbar(props: NavbarProps) {
 
       {/* Center Content */}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        {menuItems.map((item, index) => (
-          <NavbarItem key={index} isActive={path === item.route}>
+  {menuItems.map((item, index) => (
+    <React.Fragment key={index}>
+      <NavbarItem isActive={path === item.route}>
+        <Link
+          color={path === item.route ? "foreground" : "foreground"}
+          className="w-full"
+          href={item.route}
+          size="md"
+        >
+          {item.name}
+        </Link>
+      </NavbarItem>
+      {index < menuItems.length - 1 && (
+        <div className="h-1 w-1 bg-white rounded-full"></div>
+      )}
+    </React.Fragment>
+  ))}
+  {/* <ThemeButton /> */}
+</NavbarContent>
 
-            
-            <Link
-              color={
-                path == item.route
-                  ? "primary"
-                  : "foreground"
-              }
-              className="w-full"
-              href={item.route}
-              size="md"
-            >
-              {item.name}
-            </Link>
-          </NavbarItem>
-        ))}
-
-        <ThemeButton />
-        <ThemeDropdown />
-      </NavbarContent>
 
       {/* Right Content */}
       <NavbarContent className="hidden md:flex" justify="end">
         <NavbarItem className="ml-2 !flex gap-2">
+        <ThemeDropdown />
           <Button className="text-default-500" radius="full" variant="light">
             Login
           </Button>
@@ -117,13 +118,13 @@ export default function BasicNavbar(props: NavbarProps) {
             radius="full"
             variant="flat"
           >
-            Get Started
+            Reservations
           </Button>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="flex md:hidden " justify="end">
-        {isMenuOpen && (<ThemeButton />)}
+        {/* {isMenuOpen && (<ThemeButton />)} */}
         {isMenuOpen && (<ThemeDropdown />)}
         
       </NavbarContent>
@@ -144,17 +145,17 @@ export default function BasicNavbar(props: NavbarProps) {
       >
         <NavbarMenuItem>
           <Button fullWidth as={Link} href="/#" variant="faded">
-            Sign In
+            Orders
           </Button>
         </NavbarMenuItem>
         <NavbarMenuItem className="mb-4">
-          <Button fullWidth as={Link} className="bg-primary text-background" href="/#">
-            Get Started
+          <Button fullWidth as={Link} className="bg-foreground text-background" href="/#">
+            Reservations
           </Button>
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="mb-2 w-full text-default-500" href={item.route} size="md">
+            <Link className="mb-2 w-full text-foreground" href={item.route} size="md">
               {item.name}
             </Link>
             {index < menuItems.length - 1 && <Divider className="opacity-50" />}
