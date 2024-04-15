@@ -25,11 +25,10 @@ import ThemeDropdown from "./theme-dropdown";
 
 const menuItems = [
   { name: "Home", route: "/" },
-  { name: "Services", route: "/services" },
-  { name: "Pricing", route: "/pricing" },
+  { name: "Menu", route: "/menu" },
+  { name: "Locations", route: "/pricing" },
   { name: "About", route: "/about" },
-  { name: "Portfolio", route: "/portfolio" },
-  { name: "Contact", route: "/contact" },
+ 
 
 ];
 
@@ -71,10 +70,13 @@ export default function BasicNavbar(props: NavbarProps) {
     >
       {/* Left Content */}
       <NavbarBrand>
-        <div className="rounded-full bg-foreground text-background">
-          <AcmeIcon size={34} />
-        </div>
-        <span className="ml-2 text-xl font-bold">Webdev.ca</span>
+      <div className="rounded-full py-0 text-background">
+              <img
+                className="h-20 w-auto"
+                src="./images/logo.png"
+                alt="Logo"
+              />
+            </div>
       </NavbarBrand>
 
       {/* Center Content */}
