@@ -27,7 +27,7 @@ export default function MenuPage() {
 
             <div className="bg-blue-500 h-20"></div> */}
            
-            <section className="object-cover mx-auto w-full px-10 ">
+            <section className="mx-auto w-full px-10 ">
             <Video />
             <BasicFooter/>
     </section>
