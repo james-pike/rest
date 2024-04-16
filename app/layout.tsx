@@ -34,7 +34,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 
-	const count = 0;
+	let count = 0;
 
 	
 	return (
@@ -54,7 +54,7 @@ export default function RootLayout({
 					
 						<BasicNavbar  />
 							   <video
-                        src={ count == 1 ?          "/video/almonte1.mp4" : "/video/wellington.mp4"}
+                        src={        "/video/almonte1.mp4" }
                         loop
                         autoPlay
                         muted

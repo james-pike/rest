@@ -67,7 +67,6 @@ export default function BasicNavbar(props: NavbarProps) {
         "data-[active=true]:after:h-[2px]",
         "data-[active=true]:after:rounded-[2px]",
         "data-[active=true]:after:bg-red-700",
-
       ]
       }}
       className=" lg:px-10 border-y-1"
