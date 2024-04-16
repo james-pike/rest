@@ -106,11 +106,11 @@ export default function BasicFooter() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>{renderList({title: "Menus", items: footerNavigation.services})}</div>
               <div className="mt-10 md:mt-0">
-                {renderList({title: "Locations", items: footerNavigation.supportOptions})}
+                {renderList({title: "About", items: footerNavigation.supportOptions})}
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>{renderList({title: "About Us", items: footerNavigation.aboutUs})}</div>
+              <div>{renderList({title: "Locations", items: footerNavigation.aboutUs})}</div>
               <div className="mt-10 md:mt-0">
                 {renderList({title: "Legal", items: footerNavigation.legal})}
               </div>
