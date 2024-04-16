@@ -88,7 +88,7 @@ export default function BasicFooter() {
             <div className="flex items-center justify-start">
               <AcmeIcon size={44} />
               {/* <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> */}
-              <span className="text-medium px-1 font-medium">Joe's Italian Kitchen</span>
+              <span className="text-medium px-1 font-medium">Joes Italian Kitchen</span>
             </div>
             <p className="text-small text-default-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
