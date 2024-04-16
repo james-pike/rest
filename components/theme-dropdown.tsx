@@ -1,35 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
 import { SlLocationPin } from "react-icons/sl";
 
-type MenuContent = {
-  Almonte: string;
-  Nepean: string;
-  Wellington: string;
-};
+interface ThemeDropdownProps {
+  selectedLocation: string;
+  handleLocationChange: (location: string) => void;
+}
 
-
-
-const menuContent: MenuContent = {
-  Almonte: "Almonte menu content...",
-  Nepean: "Nepean menu content...",
-  Wellington: "Wellington menu content...",
-};
-
-export default function ThemeDropdown() {
+export default function ThemeDropdown({ selectedLocation, handleLocationChange }: ThemeDropdownProps) {
   const iconClasses = "text-xl text-default-500 pointer-events-none flex-shrink-0";
-  
-  const [selectedLocation, setSelectedLocation] = useState(() => {
-    return localStorage.getItem("selectedLocation") || "Wellington";
-  });
-
-  const handleLocationChange = (location: string) => {
-    setSelectedLocation(location);
-  };
-
-  useEffect(() => {
-    localStorage.setItem("selectedLocation", selectedLocation);
-  }, [selectedLocation]);
 
   return (
     <Dropdown>
@@ -69,10 +48,6 @@ export default function ThemeDropdown() {
           Wellington
         </DropdownItem>
       </DropdownMenu>
-      <div>
-        <h1>{selectedLocation} Menu</h1>
-        <p>{menuContent[selectedLocation]}</p>
-      </div>
     </Dropdown>
   );
 }

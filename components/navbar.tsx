@@ -153,7 +153,9 @@ export default function BasicNavbar(props: NavbarProps) {
 
       <NavbarContent className="flex md:hidden " justify="end">
         {/* {isMenuOpen && (<ThemeButton />)} */}
-        {isMenuOpen && (<ThemeDropdown selectedLocation={undefined} handleLocationChange={undefined} />)}
+        {isMenuOpen && (<ThemeDropdown selectedLocation={ 
+          selectedLocation} handleLocationChange={handleLocationChange} />)}
+        
         
       </NavbarContent>
 
