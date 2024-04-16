@@ -59,7 +59,7 @@ export default function RootLayout({
 							autoPlay
 							poster="/images/poster.png"
 							muted
-							style={{ opacity: 0.75, height: '40vh' }}
+							style={{ opacity: 0.75, height: '50vh' }}
 							className='object-cover w-full h-full lg:px-10 border-b '
 						>
 						</video>
