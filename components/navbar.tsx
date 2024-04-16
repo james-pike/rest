@@ -4,7 +4,7 @@ import type {NavbarProps} from "@nextui-org/react";
 import { RiRestaurantFill } from "react-icons/ri";
 
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -26,17 +26,37 @@ import ThemeDropdown from "./theme-dropdown";
 
 
 const menuItems = [
-  { name: "Home", route: "/" },
-  { name: "Menu", route: "/menu" },
-  { name: "Locations", route: "/pricing" },
-  { name: "About", route: "/about" },
- 
-
+  { name: "HOME", route: "/" },
+  { name: "MENU", route: "/menu" },
+  { name: "LOCATIONS", route: "/locations" },
+  { name: "ABOUT", route: "/about" },
 ];
+
+const menuContent = {
+  Almonte: "This is Almonte's menu",
+  Nepean: "This is Nepean's menu",
+  Wellington: "This is Wellington's menu",
+};
 
 export default function BasicNavbar(props: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const path = usePathname();
+
+  // State to manage the selected location
+  const [selectedLocation, setSelectedLocation] = useState(() => {
+    // Load last selected location from local storage, default to "Wellington"
+    return localStorage.getItem("selectedLocation") || "Wellington";
+  });
+
+  // Function to handle selection of a different location
+  const handleLocationChange = (location) => {
+    setSelectedLocation(location);
+  };
+
+  // Save selected location to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("selectedLocation", selectedLocation);
+  }, [selectedLocation]);
 
   return (
     <Navbar
@@ -50,7 +70,7 @@ export default function BasicNavbar(props: NavbarProps) {
         item: ["hidden md:flex",
         "flex",
         "relative",
-        "h-full",
+        // "h-full",
         "items-center",
         "data-[active=true]:after:content-['']",
         "data-[active=true]:after:absolute",
@@ -59,22 +79,22 @@ export default function BasicNavbar(props: NavbarProps) {
         "data-[active=true]:after:right-0",
         "data-[active=true]:after:h-[2px]",
         "data-[active=true]:after:rounded-[2px]",
-        "data-[active=true]:after:bg-foreground",
+        "data-[active=true]:after:bg-red-700",
 
       ]
       }}
-      className=" lg:px-28"
+      className=" lg:px-10 border-y-1"
       height="60px"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBordered
-      maxWidth="full"
+      
     >
       {/* Left Content */}
       <NavbarBrand>
-      <div className="rounded-full py-0 text-background">
+      <div className="rounded-full py-0 text-background px-0">
               <img
-                className="h-20 w-auto pt-0"
+                className="h-40 w-auto"
                 src="./images/logo.png"
                 alt="Logo"
               />
@@ -107,25 +127,30 @@ export default function BasicNavbar(props: NavbarProps) {
       {/* Right Content */}
       <NavbarContent className="hidden md:flex" justify="end">
         <NavbarItem className="ml-2 !flex gap-2">
-        <ThemeDropdown />
-          <Button className="text-default-500" radius="full" variant="light">
-            Login
+        <ThemeDropdown
+        selectedLocation={selectedLocation}  // Pass selectedLocation as prop
+        handleLocationChange={handleLocationChange} // Pass handleLocationChange as prop
+      />
+          <Button className="text-default-500" radius="full" variant="light" href="" onClick={() => window.open("https://joesitaliankitchen-1asc.mobi2go.com")}>
+            Orders
           </Button>
           <Button
-            className="dark:bg-foreground bg-primary font-medium text-background"
-            color="secondary"
-            endContent={<Icon icon="solar:alt-arrow-right-linear" />}
-            radius="full"
-            variant="flat"
-          >
-            Reservations
-          </Button>
+  onClick={() => window.open("https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364", "_blank")}
+  className="dark:bg-foreground bg-red-800 font-medium text-background"
+  color="secondary"
+  // endContent={<Icon icon="solar:alt-arrow-right-linear" />}
+  radius="full"
+  variant="flat"
+>
+  Reservations
+</Button>
+
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="flex md:hidden " justify="end">
         {/* {isMenuOpen && (<ThemeButton />)} */}
-        {isMenuOpen && (<ThemeDropdown />)}
+        {isMenuOpen && (<ThemeDropdown selectedLocation={undefined} handleLocationChange={undefined} />)}
         
       </NavbarContent>
 

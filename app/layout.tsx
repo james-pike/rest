@@ -47,9 +47,19 @@ export default function RootLayout({
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 	
-					<div className="relative w-full flex flex-col h-screen">			
+					<div className="relative w-full flex flex-col h-screen">	
+					
 						<BasicNavbar  />
-						<main className="mx-auto w-full flex-grow lg:px-4">
+							   <video
+                        src={"/video/almonte1.mp4"}
+                        loop
+                        autoPlay
+                        muted
+                        style={{ opacity: 0.75, height: '20vh' }}
+                        className='object-cover w-full h-full lg:px-10 '
+                    >
+                    </video>	
+						<main className="mx-auto w-full flex-grow lg:px-20">
 							{children}
 						</main>
 

@@ -1,38 +1,27 @@
-import BrandBanner from "@/components/brand-banner";
-import BasicFooter from "@/components/footer";
-import Pricing from "@/components/pricing";
-import { title } from "@/components/primitives";
-import Video from "@/components/video";
+'use client'
+
+import useLocationStore from "@/components/locationStore";
+import React, { useEffect } from "react";
+
 
 export default function MenuPage() {
-    return (
-        <div className="">
-            {/* background */}
-            {/* <div className="relative">
-                <video
-                    src={"/video/wellington.mp4"}
-                    loop
-                    autoPlay
-                    muted
-                    style={{ opacity: 0.75, height: '25vh' }}
-                    className='object-cover w-full h-full border-b-2'
-                >
-                </video>
-                <div className="absolute top-1/2 left-1/4 transform -translate-x-1/4 -translate-y-1/2 z-20 space-y-3">
-                    <h1 className="text-6xl text-white font-bold">Joe's Italian Kitchen</h1>
-                    <p className="text-2xl text-white">Now serving Almonte, Nepean & Wellington</p>
-                </div>
-            </div>
+  const selectedLocation = useLocationStore((state) => state.selectedLocation);
 
+  // Define your menu content based on the selected location
+  const menuContent = {
+    Almonte: "This is Almonte's menu",
+    Nepean: "This is Nepean's menu",
+    Wellington: "This is Wellington's menu",
+  };
 
-            <div className="bg-blue-500 h-20"></div> */}
-           
-            <section className="mx-auto w-full lg:px-5 ">
-            <Video />
-           
-    </section>
+  useEffect(() => {
+    // Your menu page logic here
+  }, [selectedLocation]);
 
-   
-        </div>
-    );
+  return (
+    <div>
+      <h1>{selectedLocation} Menu</h1>
+      <p>{menuContent[selectedLocation]}</p>
+    </div>
+  );
 }
