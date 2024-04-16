@@ -1,24 +1,32 @@
 import React, { useState, useEffect } from "react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
-import { AddNoteIcon } from "./AddNoteIcon";
-import { RiRestaurantFill } from "react-icons/ri";
-import { FiChevronDown } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
+
+type MenuContent = {
+  Almonte: string;
+  Nepean: string;
+  Wellington: string;
+};
+
+
+
+const menuContent: MenuContent = {
+  Almonte: "Almonte menu content...",
+  Nepean: "Nepean menu content...",
+  Wellington: "Wellington menu content...",
+};
 
 export default function ThemeDropdown() {
   const iconClasses = "text-xl text-default-500 pointer-events-none flex-shrink-0";
   
-  // State to manage the selected location
   const [selectedLocation, setSelectedLocation] = useState(() => {
-    // Load last selected location from local storage, default to "Wellington"
     return localStorage.getItem("selectedLocation") || "Wellington";
   });
 
-  // Function to handle selection of a different location
-  const handleLocationChange = (location) => {
+  const handleLocationChange = (location: string) => {
     setSelectedLocation(location);
   };
 
-  // Save selected location to local storage whenever it changes
   useEffect(() => {
     localStorage.setItem("selectedLocation", selectedLocation);
   }, [selectedLocation]);
@@ -26,11 +34,11 @@ export default function ThemeDropdown() {
   return (
     <Dropdown>
       <DropdownTrigger>
-        <Button variant="bordered" className="h-8 bg-foreground-100 hover:bg-foreground-200">
-          <div className="flex items-center gap-1">
-            <RiRestaurantFill />
-            <div className="hidden md:flex">
-              <p>· {selectedLocation}  </p>   <FiChevronDown className="mt-1 px-0.5" />
+        <Button variant="bordered" className="h-8 bg-foreground-100 hover:bg-foreground-200 px-1">
+          <div className="flex items-center gap-1 text">
+            <SlLocationPin />
+            <div className="md:flex">
+              <p>{selectedLocation}</p>
             </div>
           </div>
         </Button>
@@ -40,7 +48,7 @@ export default function ThemeDropdown() {
           key="almonte"
           shortcut="⌘N"
           onClick={() => handleLocationChange("Almonte")}
-          startContent={<AddNoteIcon className={iconClasses} />}
+          startContent={<SlLocationPin className={iconClasses} />}
         >
           Almonte
         </DropdownItem>
@@ -48,7 +56,7 @@ export default function ThemeDropdown() {
           key="nepean"
           shortcut="⌘C"
           onClick={() => handleLocationChange("Nepean")}
-          startContent={<AddNoteIcon className={iconClasses} />}
+          startContent={<SlLocationPin className={iconClasses} />}
         >
           Nepean
         </DropdownItem>
@@ -56,11 +64,15 @@ export default function ThemeDropdown() {
           key="wellington"
           shortcut="⌘⇧E"
           onClick={() => handleLocationChange("Wellington")}
-          startContent={<AddNoteIcon className={iconClasses} />}
+          startContent={<SlLocationPin className={iconClasses} />}
         >
           Wellington
         </DropdownItem>
       </DropdownMenu>
+      <div>
+        <h1>{selectedLocation} Menu</h1>
+        <p>{menuContent[selectedLocation]}</p>
+      </div>
     </Dropdown>
   );
 }

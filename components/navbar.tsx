@@ -23,6 +23,8 @@ import {AcmeIcon} from "../social";
 import { ThemeButton } from "./theme-button";
 import { usePathname } from "next/navigation";
 import ThemeDropdown from "./theme-dropdown";
+import { SlLocationPin } from "react-icons/sl";
+
 
 
 const menuItems = [
@@ -127,7 +129,7 @@ export default function BasicNavbar(props: NavbarProps) {
       {/* Right Content */}
       <NavbarContent className="hidden md:flex" justify="end">
         <NavbarItem className="ml-2 !flex gap-2">
-        <ThemeDropdown
+        <ThemeDropdown 
         selectedLocation={selectedLocation}  // Pass selectedLocation as prop
         handleLocationChange={handleLocationChange} // Pass handleLocationChange as prop
       />
@@ -142,6 +144,7 @@ export default function BasicNavbar(props: NavbarProps) {
   radius="full"
   variant="flat"
 >
+  
   Reservations
 </Button>
 
@@ -174,7 +177,7 @@ export default function BasicNavbar(props: NavbarProps) {
           </Button>
         </NavbarMenuItem>
         <NavbarMenuItem className="mb-4">
-          <Button fullWidth as={Link} className="bg-foreground text-background" href="/#">
+          <Button fullWidth as={Link} className="bg-foreground border-foreground text-background" href="/#">
             Reservations
           </Button>
         </NavbarMenuItem>
