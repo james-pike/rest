@@ -117,7 +117,7 @@ export default function BasicFooter() {
             </div>
           </div>
         </div>
-
+{/* 
         <div className="my-10 rounded-medium bg-default-200/20 p-4 sm:my-14 sm:p-8 lg:my-16 lg:flex lg:items-center lg:justify-between lg:gap-2">
           <div>
             <h3 className="text-small font-semibold text-default-600">
@@ -146,7 +146,7 @@ export default function BasicFooter() {
               </Button>
             </div>
           </form>
-        </div>
+        </div> */}
 
         <div className="flex flex-wrap justify-between gap-2 pt-8">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
