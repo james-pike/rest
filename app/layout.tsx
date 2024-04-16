@@ -57,7 +57,7 @@ export default function RootLayout({
 							src={"/video/almonte1.mp4"}
 							loop
 							autoPlay
-							poster="logo.png"
+							poster="/images/logo.png"
 							muted
 							style={{ opacity: 0.75, height: '25vh' }}
 							className='object-cover w-full h-full lg:px-10 border-b '
