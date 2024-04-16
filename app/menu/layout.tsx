@@ -4,8 +4,8 @@ export default function MenuLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<section className="flex flex-col gap-4 py-8 px-10 md:py-10">
-			<div className="inline-block max-w-lg justify-start">
+		<section className="flex flex-col gap-4 py-8 md:py-10">
+			<div className="inline-block max-w-lg text-center justify-start">
 				{children}
 			</div>
 		</section>
