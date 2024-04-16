@@ -49,8 +49,8 @@ export default function BasicNavbar(props: NavbarProps) {
     >
       {/* Left Content */}
       <NavbarBrand>
-        <div className="rounded-full mt-8 py-0 text-background px-0">
-          <img className="h-20 w-auto" src="./images/logo.png" alt="Logo" />
+        <div className="rounded-full mt-9 py-0 text-background px-0">
+          <img className="h-24 w-auto" src="./images/logo.png" alt="Logo" />
         </div>
       </NavbarBrand>
 
