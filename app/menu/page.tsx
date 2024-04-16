@@ -1,11 +1,11 @@
 'use client'
 
-import useLocationStore from "@/components/locationStore";
+
 import React, { useEffect } from "react";
 
 
 export default function MenuPage() {
-  const selectedLocation = useLocationStore((state) => state.selectedLocation);
+
 
   // Define your menu content based on the selected location
   const menuContent = {
@@ -14,13 +14,10 @@ export default function MenuPage() {
     Wellington: "This is Wellington's menu",
   };
 
-  useEffect(() => {
-    // Your menu page logic here
-  }, [selectedLocation]);
 
   return (
     <div>
-      <h1>{selectedLocation} Menu</h1>
+      <h1> Menu</h1>
       {/* <p>{menuContent[selectedLocation]}</p> */}
     </div>
   );
