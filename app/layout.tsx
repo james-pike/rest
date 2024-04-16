@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import BasicNavbar from '@/components/navbar';
 import clsx from "clsx";
 import BasicFooter from "@/components/footer";
+import Component from "@/components/list";
 
 export const metadata: Metadata = {
 	title: {
@@ -33,6 +34,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 
+	const count = 0;
+
 	
 	return (
 
@@ -51,7 +54,7 @@ export default function RootLayout({
 					
 						<BasicNavbar  />
 							   <video
-                        src={"/video/almonte1.mp4"}
+                        src={ count == 1 ?          "/video/almonte1.mp4" : "/video/wellington.mp4"}
                         loop
                         autoPlay
                         muted
@@ -59,6 +62,7 @@ export default function RootLayout({
                         className='object-cover w-full h-full lg:px-10 border-b-2'
                     >
                     </video>	
+					{/* <Component /> */}
 						<main className="mx-auto w-full flex-grow lg:px-20">
 							{children}
 						</main>

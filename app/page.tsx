@@ -1,20 +1,24 @@
 'use client'
 
+
+import React, { useEffect } from "react";
+
+
 export default function MenuPage() {
-    return (
-        <div className="">
-            
-        
-        
-           
-            <section className="mx-auto w-full lg:px-5 ">
 
 
+  useEffect(() => {
+    // This is a hack to make sure the page is scrolled to the top when it's loaded
+    window.scrollTo(0, 0);
+  }, []);
 
-            <div className="h-screen"></div>
-    </section>
+  
 
-   
-        </div>
-    );
+
+  return (
+    <div>
+     Home
+    
+    </div>
+  );
 }

@@ -17,7 +17,7 @@ export default function MenuPage() {
 
   return (
     <div>
-      <h1>Wellington Menu</h1>
+      <h1>Locations</h1>
       {/* <p>{menuContent[selectedLocation]}</p> */}
     </div>
   );
