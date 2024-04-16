@@ -4,7 +4,7 @@ export default function LocationLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<section className="flex flex-col gap-4 py-8 px-10 md:py-10">
+		<section className="flex flex-col gap-4 py-12 px-16 md:py-10">
 			<div className="inline-block max-w-lg justify-start">
 				{children}
 			</div>

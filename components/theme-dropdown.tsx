@@ -10,7 +10,7 @@ export default function ThemeDropdown({  }) {
   return (
     <Dropdown>
       <DropdownTrigger>
-        <Button variant="bordered" className="h-8 bg-foreground-100 hover:bg-foreground-200 px-1">
+        <Button variant="bordered" className="h-8 bg-foreground-100 hover:bg-foreground-200 px-2">
           <div className="flex items-center gap-1 text">
             <SlLocationPin />
             <div className="md:flex">
