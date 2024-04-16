@@ -56,7 +56,7 @@ export default function RootLayout({
                         autoPlay
                         muted
                         style={{ opacity: 0.75, height: '20vh' }}
-                        className='object-cover w-full h-full lg:px-10 '
+                        className='object-cover w-full h-full lg:px-10 border-b-2'
                     >
                     </video>	
 						<main className="mx-auto w-full flex-grow lg:px-20">

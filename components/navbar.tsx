@@ -155,7 +155,7 @@ export default function BasicNavbar(props: NavbarProps) {
         {/* {isMenuOpen && (<ThemeButton />)} */}
         {isMenuOpen && (<ThemeDropdown selectedLocation={ 
           selectedLocation} handleLocationChange={handleLocationChange} />)}
-        
+           
         
       </NavbarContent>
 
@@ -174,14 +174,29 @@ export default function BasicNavbar(props: NavbarProps) {
         }}
       >
         <NavbarMenuItem>
-          <Button fullWidth as={Link} href="/#" variant="faded">
-            Orders
-          </Button>
+        <Button
+  fullWidth
+  as="a" // Use "a" for an anchor tag
+  href="https://joesitaliankitchen-1asc.mobi2go.com"
+  variant="faded"
+  target="_blank" // Open link in a new tab
+  rel="noopener noreferrer" // Recommended for security
+>
+  Orders
+</Button>
+          
         </NavbarMenuItem>
         <NavbarMenuItem className="mb-4">
-          <Button fullWidth as={Link} className="bg-foreground border-foreground text-background" href="/#">
-            Reservations
-          </Button>
+        <Button
+  fullWidth
+  as="a" // Use "a" for an anchor tag
+  href="https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364"
+  className="bg-foreground border-foreground text-background"
+  target="_blank" // Open link in a new tab
+  rel="noopener noreferrer" // Recommended for security
+>
+  Reservations
+</Button>
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
