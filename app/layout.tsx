@@ -36,10 +36,10 @@ export default function RootLayout({
 
 	let count = 0;
 
-	
+
 	return (
 
-		
+
 		<html lang="en" suppressHydrationWarning>
 			<head />
 			<body
@@ -49,26 +49,28 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-	
-					<div className="relative w-full flex flex-col h-screen">	
-					
-						<BasicNavbar  />
-							   <video
-                        src={        "/video/almonte1.mp4" }
-                        loop
-                        autoPlay
-                        muted
-                        style={{ opacity: 0.55, height: '25vh' }}
-                        className='object-cover w-full h-full lg:px-10 border-b-2'
-                    >
-                    </video>	
-					{/* <Component /> */}
+
+					<div className="relative w-full flex flex-col h-screen">
+
+						<BasicNavbar />
+						<video
+							src={"/video/almonte1.mp4"}
+							loop
+							autoPlay
+							poster="logo.png"
+							muted
+							style={{ opacity: 0.75, height: '25vh' }}
+							className='object-cover w-full h-full lg:px-10 border-b-2'
+						>
+						</video>
+						{/* <Component /> */}
 						<main className="mx-auto w-full flex-grow lg:px-20">
 							{children}
 						</main>
 
-						
+						<BasicFooter/>
 					</div>
+					
 				</Providers>
 			</body>
 		</html>
