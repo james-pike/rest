@@ -51,7 +51,7 @@ export default function BasicNavbar(props: NavbarProps) {
   });
 
   // Function to handle selection of a different location
-  const handleLocationChange = (location) => {
+  const handleLocationChange = (location: React.SetStateAction<string>) => {
     setSelectedLocation(location);
   };
 
