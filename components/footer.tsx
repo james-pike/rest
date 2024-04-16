@@ -16,26 +16,26 @@ const footerNavigation = {
     {name: "Branding", href: "#"},
     {name: "Data Analysis", href: "#"},
     {name: "E-commerce Solutions", href: "#"},
-    {name: "Market Research", href: "#"},
+ 
   ],
   supportOptions: [
     {name: "Pricing Plans", href: "#"},
     {name: "User Guides", href: "#"},
     {name: "Tutorials", href: "#"},
-    {name: "Service Status", href: "#"},
+  
   ],
   aboutUs: [
     {name: "Our Story", href: "#"},
     {name: "Latest News", href: "#"},
     {name: "Career Opportunities", href: "#"},
-    {name: "Media Enquiries", href: "#"},
-    {name: "Collaborations", href: "#"},
+   
+  
   ],
   legal: [
     {name: "Claim", href: "#"},
     {name: "Privacy", href: "#"},
     {name: "Terms", href: "#"},
-    {name: "User Agreement", href: "#"},
+  
   ],
   social: [
     {
@@ -87,7 +87,8 @@ export default function BasicFooter() {
           <div className="space-y-8 md:pr-8">
             <div className="flex items-center justify-start">
               <AcmeIcon size={44} />
-              <span className="text-medium font-medium">ACME</span>
+              {/* <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> */}
+              <span className="text-medium px-1 font-medium">Joe's Italian Kitchen</span>
             </div>
             <p className="text-small text-default-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
@@ -103,9 +104,9 @@ export default function BasicFooter() {
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>{renderList({title: "Services", items: footerNavigation.services})}</div>
+              <div>{renderList({title: "Menus", items: footerNavigation.services})}</div>
               <div className="mt-10 md:mt-0">
-                {renderList({title: "Support", items: footerNavigation.supportOptions})}
+                {renderList({title: "Locations", items: footerNavigation.supportOptions})}
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -135,7 +136,7 @@ export default function BasicFooter() {
               id="email-address"
               labelPlacement="outside"
               name="email-address"
-              placeholder="johndoe@email.com"
+              placeholder="name@email.com"
               startContent={<Icon className="text-default-500" icon="solar:letter-linear" />}
               type="email"
             />

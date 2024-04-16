@@ -34,7 +34,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 
-	let count = 0;
+
 
 
 	return (
