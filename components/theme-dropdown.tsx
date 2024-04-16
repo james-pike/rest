@@ -45,7 +45,7 @@ export default function ThemeDropdown({ selectedLocation, handleLocationChange }
           onClick={() => handleLocationChange("Wellington")}
           startContent={<SlLocationPin className={iconClasses} />}
         >
-          Wellington
+          Welllington
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
