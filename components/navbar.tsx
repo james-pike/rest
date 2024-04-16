@@ -44,21 +44,6 @@ export default function BasicNavbar(props: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const path = usePathname();
 
-  // State to manage the selected location
-  const [selectedLocation, setSelectedLocation] = useState(() => {
-    // Load last selected location from local storage, default to "Wellington"
-    return localStorage.getItem("selectedLocation") || "Wellington";
-  });
-
-  // Function to handle selection of a different location
-  const handleLocationChange = (location: React.SetStateAction<string>) => {
-    setSelectedLocation(location);
-  };
-
-  // Save selected location to local storage whenever it changes
-  useEffect(() => {
-    localStorage.setItem("selectedLocation", selectedLocation);
-  }, [selectedLocation]);
 
   return (
     <Navbar
@@ -130,8 +115,8 @@ export default function BasicNavbar(props: NavbarProps) {
       <NavbarContent className="hidden md:flex" justify="end">
         <NavbarItem className="ml-2 !flex gap-2">
         <ThemeDropdown 
-        selectedLocation={selectedLocation}  // Pass selectedLocation as prop
-        handleLocationChange={handleLocationChange} // Pass handleLocationChange as prop
+      // Pass selectedLocation as prop
+    
       />
           <Button className="text-default-500" radius="full" variant="light" href="" onClick={() => window.open("https://joesitaliankitchen-1asc.mobi2go.com")}>
             Orders
@@ -153,8 +138,7 @@ export default function BasicNavbar(props: NavbarProps) {
 
       <NavbarContent className="flex md:hidden " justify="end">
         {/* {isMenuOpen && (<ThemeButton />)} */}
-        {isMenuOpen && (<ThemeDropdown selectedLocation={ 
-          selectedLocation} handleLocationChange={handleLocationChange} />)}
+        {isMenuOpen && (<ThemeDropdown  />)}
            
         
       </NavbarContent>
