@@ -29,7 +29,7 @@ import { SlLocationPin } from "react-icons/sl";
 
 const menuItems = [
   { name: "HOME", route: "/" },
-  { name: "MENU", route: "/menu" },
+  { name: "MENU", route: "/" },
   { name: "LOCATIONS", route: "/locations" },
   { name: "ABOUT", route: "/about" },
 ];
