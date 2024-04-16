@@ -148,7 +148,7 @@ export default function BasicFooter() {
           </form>
         </div> */}
 
-        <div className="flex flex-wrap justify-between gap-2 pt-8">
+        <div className="flex flex-wrap justify-between gap-2 pt-10">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
           <ThemeSwitch />
         </div>
