@@ -60,7 +60,7 @@ export default function RootLayout({
 							poster="logo.png"
 							muted
 							style={{ opacity: 0.75, height: '25vh' }}
-							className='object-cover w-full h-full lg:px-10 border-b border-white'
+							className='object-cover w-full h-full lg:px-10 border-b '
 						>
 						</video>
 						{/* <Component /> */}
