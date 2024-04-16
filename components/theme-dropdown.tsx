@@ -14,7 +14,7 @@ export default function ThemeDropdown({  }) {
           <div className="flex items-center gap-1 text">
             <SlLocationPin />
             <div className="md:flex">
-              <p>test</p>
+              <p>Wellington</p>
             </div>
           </div>
         </Button>

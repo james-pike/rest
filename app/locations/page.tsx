@@ -1,24 +1,9 @@
-'use client'
+import { title } from "@/components/primitives";
 
-
-import React, { useEffect } from "react";
-
-
-export default function MenuPage() {
-
-
-  useEffect(() => {
-    // This is a hack to make sure the page is scrolled to the top when it's loaded
-    window.scrollTo(0, 0);
-  }, []);
-
-  
-
-
-  return (
-    <div>
-      <h1>Locations</h1>
-      {/* <p>{menuContent[selectedLocation]}</p> */}
-    </div>
-  );
+export default function LocationPage() {
+	return (
+		<div>
+			<h1 className={title()}>Locations</h1>
+		</div>
+	);
 }

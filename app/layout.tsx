@@ -58,7 +58,7 @@ export default function RootLayout({
                         loop
                         autoPlay
                         muted
-                        style={{ opacity: 0.75, height: '20vh' }}
+                        style={{ opacity: 0.55, height: '25vh' }}
                         className='object-cover w-full h-full lg:px-10 border-b-2'
                     >
                     </video>	
