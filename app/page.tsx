@@ -18,10 +18,11 @@ export default function HomePage() {
 			left: '25%', // Position the h1 in the middle horizontally
 			transform: 'translate(-50%, -50%)', // Center the h1
 			color: 'white', // Text color
+			fontSize: '3rem', // Font size
 			zIndex: 10, // Ensure it's above the image
 		  }}
 		>
-		  Menu
+		  Menu | Wellington
 		</h1>
 	  </div>
 	);
