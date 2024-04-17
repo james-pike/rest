@@ -18,7 +18,7 @@ import { usePathname } from "next/navigation";
 import ThemeDropdown from "./theme-dropdown";
 
 const menuItems = [
-  { name: "HOME", route: "/" },
+  { name: "HOME", route: "/blog" },
   { name: "MENU", route: "/menu" },
   { name: "LOCATIONS", route: "/locations" },
   { name: "ABOUT", route: "/about" },

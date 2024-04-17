@@ -2,7 +2,7 @@ import { AcmeIcon } from "@/social";
 import ThemeSwitch from "@/theme-switch";
 import Link from "next/link";
 
-export default function MenuLayout({
+export default function HomeLayout({
 	children,
 }: {
 	children: React.ReactNode;

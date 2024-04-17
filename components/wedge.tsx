@@ -90,7 +90,7 @@ export default function Wedge() {
 
 
 
-                <video className="w-full h-40 object-cover border-b" autoPlay loop muted src="./video/almonte1.mp4" />
+                <video className="w-full h-80 object-cover border-b" autoPlay loop muted src="./video/almonte1.mp4" />
 
 
                 

@@ -55,25 +55,11 @@ export default function RootLayout({
 					<div className="relative w-full flex flex-col h-screen">
 				
 						<BasicNavbar />
-					
-						<main className="mx-auto w-full flex-grow ">
+					    
+						<main className="">
 							{children}
 						</main>
 						
-						{/* <video
-							src={"/video/almonte1.mp4"}
-							loop
-							autoPlay
-							poster="/images/poster.png"
-							muted
-							style={{ opacity: 0.75, height: '50vh' }}
-							className='object-cover w-full h-full lg:px-10 border-b '
-						>
-						</video> */}
-						{/* <Component /> */}
-						
-{/* 
-						<BasicFooter/> */}
 					</div>
 					
 				</Providers>
