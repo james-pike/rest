@@ -6,14 +6,14 @@ export default function HomePage() {
 		<div>
 
 <video
-					className="w-full h-40 object-cover border-b-2"
+					className="w-full h-40 object-cover border-b-8 border-black"
 					style={{ opacity: 0.75, height: '25vh' }}
 					src="./video/almonte1.mp4"
 					autoPlay
 					poster="./images/poster.png"
 					loop
 				/>
-				{/* <div className="border"></div> */}
+				<div className="border-t"></div> 
 
 
 			<div style={{ position: 'relative' }}>
@@ -119,7 +119,7 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border"></div>
+			<div className="border-t"></div>
 
 
 <BasicFooter/>
