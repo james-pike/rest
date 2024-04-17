@@ -55,7 +55,7 @@ export default function RootLayout({
 
 						<BasicNavbar />
 						<Wedge/>
-						<video
+						{/* <video
 							src={"/video/almonte1.mp4"}
 							loop
 							autoPlay
@@ -64,7 +64,7 @@ export default function RootLayout({
 							style={{ opacity: 0.75, height: '50vh' }}
 							className='object-cover w-full h-full lg:px-10 border-b '
 						>
-						</video>
+						</video> */}
 						{/* <Component /> */}
 						<main className="mx-auto w-full flex-grow lg:px-20">
 							{children}

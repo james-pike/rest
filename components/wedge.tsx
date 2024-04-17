@@ -83,14 +83,14 @@ export default function Wedge() {
 
   return (
     <footer className="flex w-full flex-col">
-      <div className="mx-auto px-6 pb-8 lg:px-8 ">
+      <div className="mx-auto sm:px-6 pb-8 lg:px-8 ">
         
         
         
         
        
     
-        <video className="w-full h-40  border-b" autoPlay loop muted src="./video/almonte1.mp4"/>
+        <video className="w-full h-40 object-cover border-b" autoPlay loop muted src="./video/almonte1.mp4"/>
 
 
 
@@ -102,7 +102,7 @@ export default function Wedge() {
 
 
 
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8 px-4">
           <div className="space-y-8 md:pr-8">
             <div className="flex items-center justify-start">
               <AcmeIcon size={44} />
