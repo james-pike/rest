@@ -89,7 +89,6 @@ export default function BasicFooter() {
         
         
        <AboutPage/>
-       <div className="text-large py-10">hey this is s teset slerkmser slekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</div>
     
         <video className="w-full h-20 object-cover" autoPlay loop muted src="./video/almonte1.mp4"/>
 
