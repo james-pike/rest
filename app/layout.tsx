@@ -8,6 +8,7 @@ import clsx from "clsx";
 import BasicFooter from "@/components/footer";
 import Component from "@/components/list";
 import Wedge from "@/components/wedge";
+import WedgeX from "@/components/x";
 
 export const metadata: Metadata = {
 	title: {
@@ -52,9 +53,13 @@ export default function RootLayout({
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 
 					<div className="relative w-full flex flex-col h-screen">
-
+				
 						<BasicNavbar />
-						<Wedge/>
+					
+						<main className="mx-auto w-full flex-grow ">
+							{children}
+						</main>
+						
 						{/* <video
 							src={"/video/almonte1.mp4"}
 							loop
@@ -66,11 +71,9 @@ export default function RootLayout({
 						>
 						</video> */}
 						{/* <Component /> */}
-						<main className="mx-auto w-full flex-grow lg:px-20">
-							{children}
-						</main>
-
-						<BasicFooter/>
+						
+{/* 
+						<BasicFooter/> */}
 					</div>
 					
 				</Providers>
