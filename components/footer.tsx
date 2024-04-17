@@ -83,7 +83,7 @@ export default function BasicFooter() {
 
   return (
     <footer className="flex w-full flex-col">
-      <div className="mx-auto px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto px-6 pb-8 pt-12 sm:pt-24 lg:px-8 lg:pt-32">
         
         
         
