@@ -17,7 +17,7 @@ export default function HomePage() {
 
 			<div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-b-12 border-black"
+					className="w-full h-40 object-cover border-b-12 border-t-12 border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/p1.jpg"
 					alt="Background Image"
@@ -38,11 +38,11 @@ export default function HomePage() {
 					Menu
 				</h1>
 			</div>
-
+<div className="border"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
-				className="w-full h-40 object-cover  border-t border-white"
+				className="w-full h-40 object-cover  border-t-12 border-black border-b-12"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/a1.jpg"
 					alt="Background Image"
@@ -64,7 +64,7 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-
+			<div className="border"></div>
 
 
 
@@ -92,7 +92,7 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-
+			<div className="border"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
