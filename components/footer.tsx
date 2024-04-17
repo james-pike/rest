@@ -88,10 +88,9 @@ export default function BasicFooter() {
         
         
         
-       <AboutPage/>
+      
     
-        <video className="w-full h-20 object-cover" autoPlay loop muted src="./video/almonte1.mp4"/>
-
+        
 
 
 

@@ -6,7 +6,7 @@ export default function HomePage() {
 		<div>
 
 <video
-					className="w-full h-40 object-cover border-b"
+					className="w-full h-40 object-cover border-b-8 border-black"
 					style={{ opacity: 0.75, height: '25vh' }}
 					src="./video/almonte1.mp4"
 					autoPlay
@@ -17,7 +17,7 @@ export default function HomePage() {
 
 			<div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-b"
+					className="w-full h-40 object-cover border-b-8 border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/p1.jpg"
 					alt="Background Image"
@@ -42,7 +42,7 @@ export default function HomePage() {
 
 			<div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-b"
+				className="w-full h-40 object-cover border-b-8 border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/a1.jpg"
 					alt="Background Image"
@@ -70,7 +70,7 @@ export default function HomePage() {
 
 			<div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-b"
+				className="w-full h-40 object-cover border-b-8 border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/events3.jpg"
 					alt="Background Image"
@@ -96,7 +96,7 @@ export default function HomePage() {
 
 			<div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-b"
+				className="w-full h-40 object-cover border-b-8 border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/c1.jpg"
 					alt="Background Image"
