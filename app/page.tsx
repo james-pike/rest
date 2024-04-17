@@ -1,8 +1,19 @@
+import BasicFooter from "@/components/footer";
 import { title } from "@/components/primitives";
 
 export default function HomePage() {
 	return (
 		<div>
+
+<video
+					className="w-full h-40 object-cover border-b"
+					style={{ opacity: 0.75, height: '40vh' }}
+					src="./video/almonte1.mp4"
+					autoPlay
+					loop
+				/>
+
+
 			<div style={{ position: 'relative' }}>
 				<img
 					className="w-full h-40 object-cover border-b"
@@ -107,7 +118,7 @@ export default function HomePage() {
 			</div>
 
 
-
+<BasicFooter/>
 
 		</div>
 
