@@ -7,6 +7,7 @@ import BasicNavbar from '@/components/navbar';
 import clsx from "clsx";
 import BasicFooter from "@/components/footer";
 import Component from "@/components/list";
+import Wedge from "@/components/wedge";
 
 export const metadata: Metadata = {
 	title: {
@@ -53,6 +54,7 @@ export default function RootLayout({
 					<div className="relative w-full flex flex-col h-screen">
 
 						<BasicNavbar />
+						<Wedge/>
 						<video
 							src={"/video/almonte1.mp4"}
 							loop

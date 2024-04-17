@@ -62,7 +62,7 @@ const footerNavigation = {
   ],
 };
 
-export default function BasicFooter() {
+export default function Wedge() {
   const renderList = React.useCallback(
     ({title, items}: {title: string; items: {name: string; href: string}[]}) => (
       <div>
@@ -83,15 +83,14 @@ export default function BasicFooter() {
 
   return (
     <footer className="flex w-full flex-col">
-      <div className="mx-auto px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto px-6 pb-8 lg:px-8 ">
         
         
         
         
-       <AboutPage/>
-       <div className="text-large py-10">hey this is s teset slerkmser slekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</div>
+       
     
-        <video className="w-full h-20 object-cover" autoPlay loop muted src="./video/almonte1.mp4"/>
+        <video className="w-full h-40 object-cover border-b" autoPlay loop muted src="./video/almonte1.mp4"/>
 
 
 
