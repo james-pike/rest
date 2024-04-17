@@ -9,7 +9,9 @@ export default function BlogLayout({
 		<div>
 	
 		<Wedge/>
-		<img className="w-full h-40 object-cover border-b" src="./images/p1.jpg" />
+		<img className="w-full h-40 object-cover border-b" 
+		style={{ opacity: 0.75, height: '50vh' }}
+		src="./images/p1.jpg" />
 		</div>
 	);
 }
