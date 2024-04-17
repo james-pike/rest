@@ -16,6 +16,7 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    
     light: {
       layout: {},
       colors: {}
@@ -25,6 +26,9 @@ module.exports = {
       colors: {}
     },
     extend: {
+      borderWidth: {
+        '12': '12px', // You can change '12' to any number you need
+      },
       keyframes: {
         "scrolling-banner": {
           from: {transform: "translateX(0)"},
