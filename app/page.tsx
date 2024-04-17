@@ -22,7 +22,7 @@ export default function HomePage() {
 			zIndex: 10, // Ensure it's above the image
 		  }}
 		>
-		  Menu | Wellington
+		  Menu 
 		</h1>
 	  </div>
 	);
