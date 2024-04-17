@@ -5,7 +5,7 @@ export default function HomePage() {
 		<div style={{ position: 'relative' }}>
 		<img
 		  className="w-full h-40 object-cover border-b"
-		  style={{ opacity: 0.75, height: '50vh' }}
+		  style={{ opacity: 0.75, height: '20vh' }}
 		  src="./images/p1.jpg"
 		  alt="Background Image"
 		/>
@@ -21,7 +21,7 @@ export default function HomePage() {
 			zIndex: 10, // Ensure it's above the image
 		  }}
 		>
-		  Home Page
+		  Menu
 		</h1>
 	  </div>
 	);
