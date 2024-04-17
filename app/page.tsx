@@ -10,6 +10,7 @@ export default function HomePage() {
 					style={{ opacity: 0.75, height: '25vh' }}
 					src="./video/almonte1.mp4"
 					autoPlay
+					poster="./images/poster.png"
 					loop
 				/>
 
