@@ -6,18 +6,19 @@ export default function HomePage() {
 		<div>
 
 <video
-					className="w-full h-40 object-cover border-b "
+					className="w-full h-40 object-cover border-b-2"
 					style={{ opacity: 0.75, height: '25vh' }}
 					src="./video/almonte1.mp4"
 					autoPlay
 					poster="./images/poster.png"
 					loop
 				/>
+				{/* <div className="border"></div> */}
 
 
 			<div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-b-12 border-t-12 border-black"
+					className="w-full h-40 object-cover border-b-8 border-t-8 border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/p1.jpg"
 					alt="Background Image"
@@ -38,11 +39,11 @@ export default function HomePage() {
 					Menu
 				</h1>
 			</div>
-<div className="border"></div>
+<div className="border-t"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
-				className="w-full h-40 object-cover  border-t-12 border-black border-b-12"
+				className="w-full h-40 object-cover  border-t-8 border-black border-b-8"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/a1.jpg"
 					alt="Background Image"
@@ -64,13 +65,13 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border"></div>
+			<div className="border-t"></div>
 
 
 
 			<div style={{ position: 'relative' }}>
 				<img
-				className="w-full h-40 object-cover border-b-8 border-black"
+				className="w-full h-40 object-cover border-b-8 border-t-8 border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/events3.jpg"
 					alt="Background Image"
@@ -92,11 +93,11 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border"></div>
+			<div className="border-t"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
-				className="w-full h-40 object-cover border-b-8 border-black"
+				className="w-full h-40 object-cover border-b-8 border-t-8 border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/c1.jpg"
 					alt="Background Image"
@@ -117,6 +118,8 @@ export default function HomePage() {
 					Catering
 				</h1>
 			</div>
+
+			<div className="border"></div>
 
 
 <BasicFooter/>
