@@ -6,7 +6,7 @@ export default function HomePage() {
 		<div>
 
 <video
-					className="w-full h-40 object-cover border-b"
+					className="w-full h-40 object-cover border-b border-b-gray-700"
 					style={{ opacity: 0.75, height: '35vh' }}
 					src="./video/almonte1.mp4"
 					autoPlay
@@ -39,7 +39,7 @@ export default function HomePage() {
 					Menu
 				</h1>
 			</div>
-<div className="border-t"></div>
+<div className="border-t border-gray-700"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
@@ -65,7 +65,7 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border-t"></div>
+			<div className="border-t border-gray-700"></div>
 
 
 
@@ -119,7 +119,7 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border"></div>
+			<div className="border-t border-gray-700"></div>
 
 
 <BasicFooter/>
