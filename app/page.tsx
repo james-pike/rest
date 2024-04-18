@@ -1,5 +1,3 @@
-'use client'
-
 import BasicFooter from "@/components/footer";
 import { title } from "@/components/primitives";
 
@@ -18,43 +16,38 @@ export default function HomePage() {
 			 <div className="border-8 border-black"></div>
 
 
-<a href="/menu" style={{ textDecoration: 'none', display: 'inline-block' }}>
-  <div 
-    style={{
-      position: 'relative',
-      transition: 'transform 0.2s ease', // Add transition effect
-    }}
-    onMouseEnter={(e) => (e.target as HTMLElement).style.transform = 'scale(1.05)'} // Cast to HTMLElement and scale up on hover
-    onMouseLeave={(e) => (e.target as HTMLElement).style.transform = 'scale(1)'} // Cast to HTMLElement and restore original scale when not hovered
-  >
-    <img
-      className="w-full h-40 object-cover border-black"
-      style={{ opacity: 0.75, height: '20vh' }}
-      src="./images/p1.jpg"
-      alt="Background Image"
-    />
-    <h1
-      className={title()}
-      style={{
-        position: 'absolute',
-        top: '50%', // Position the h1 in the middle vertically
-        left: '25%', // Position the h1 in the middle horizontally
-        transform: 'translate(-50%, -50%)', // Center the h1
-        color: 'white', // Text color
-        fontSize: '2.5rem', // Font size
-        zIndex: 10, // Ensure it's above the image
-      }}
-    >
-      Menu
-    </h1>
-  </div>
-</a>
+			 <a href="/menu" style={{ textDecoration: 'none' }}>
+			<div style={{ position: 'relative' }}>
+				<img
+					className="w-full h-40 object-cover border-black"
+					style={{ opacity: 0.75, height: '20vh' }}
+					src="./images/p1.jpg"
+					alt="Background Image"
+				/>
+				<h1
+					className={title()}
+					style={{
 
+						position: 'absolute',
+						top: '50%', // Position the h1 in the middle vertically
+						left: '25%', // Position the h1 in the middle horizontally
+						transform: 'translate(-50%, -50%)', // Center the h1
+						color: 'white', // Text color
+						fontSize: '2rem', // Font size
+						zIndex: 10, // Ensure it's above the image
+					}}
+				>
+					Menu
+				</h1>
+			</div>
 
+			</a>
 
 
 <div className="border-8 border-black"></div>
 
+
+<a href="/locations" style={{ textDecoration: 'none' }}>
 			<div style={{ position: 'relative' }}>
 				<img
 				className="w-full h-40 object-cover border-black"
@@ -71,13 +64,15 @@ export default function HomePage() {
 						left: '25%', // Position the h1 in the middle horizontally
 						transform: 'translate(-50%, -50%)', // Center the h1
 						color: 'white', // Text color
-						fontSize: '2.5rem', // Font size
+						fontSize: '2rem', // Font size
 						zIndex: 10, // Ensure it's above the image
 					}}
 				>
 					Locations
 				</h1>
 			</div>
+
+			</a>
 
 			<div className="border-8 border-black"></div>
 
@@ -99,7 +94,7 @@ export default function HomePage() {
 						left: '25%', // Position the h1 in the middle horizontally
 						transform: 'translate(-50%, -50%)', // Center the h1
 						color: 'white', // Text color
-						fontSize: '2.5rem', // Font size
+						fontSize: '2rem', // Font size
 						zIndex: 10, // Ensure it's above the image
 					}}
 				>
@@ -125,7 +120,7 @@ export default function HomePage() {
 						left: '25%', // Position the h1 in the middle horizontally
 						transform: 'translate(-50%, -50%)', // Center the h1
 						color: 'white', // Text color
-						fontSize: '2.5rem', // Font size
+						fontSize: '2rem', // Font size
 						zIndex: 10, // Ensure it's above the image
 					}}
 				>
