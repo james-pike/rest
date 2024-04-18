@@ -10,7 +10,7 @@ export default function HomePage() {
 					style={{ opacity: 0.75, height: '35vh' }}
 					src="./video/almonte1.mp4"
 					autoPlay
-					poster="./images/a5.jpg"
+					poster="./images/a6.png"
 					loop
 				/>
 			 <div className="border-12 border-black"></div>
@@ -119,7 +119,7 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border-t border-gray-700"></div>
+			<div className="border-12 border-black"></div>
 
 
 <BasicFooter/>
