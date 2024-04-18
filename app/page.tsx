@@ -13,12 +13,12 @@ export default function HomePage() {
 					poster="./images/a5.jpg"
 					loop
 				/>
-				{/* <div className="border"></div> */}
+			 <div className="border-12 border-black"></div>
 
 
 			<div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-b-12 border-t-12 border-black"
+					className="w-full h-40 object-cover border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/p1.jpg"
 					alt="Background Image"
@@ -39,11 +39,11 @@ export default function HomePage() {
 					Menu
 				</h1>
 			</div>
-<div className="border-t border-gray-700"></div>
+<div className="border-12 border-black"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
-				className="w-full h-40 object-cover  border-t-12 border-black border-b-12"
+				className="w-full h-40 object-cover border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/a1.jpg"
 					alt="Background Image"
@@ -65,13 +65,13 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border-t border-gray-700"></div>
+			<div className="border-12 border-black"></div>
 
 
 
 			<div style={{ position: 'relative' }}>
 				<img
-				className="w-full h-40 object-cover border-b-12 border-t-12 border-black"
+				className="w-full h-40 object-cover border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/events3.jpg"
 					alt="Background Image"
@@ -93,11 +93,11 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border-t border-gray-700"></div>
+			<div className="border-12 border-black"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
-				className="w-full h-40 object-cover border-b-12 border-t-12 border-black"
+				className="w-full h-40 object-cover border-black"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/c1.jpg"
 					alt="Background Image"
