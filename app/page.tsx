@@ -39,6 +39,7 @@ export default function HomePage() {
     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
       Orders
     </button>
+	<div className="pt-2"></div>
     <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
       Reservations
     </button>
@@ -62,49 +63,9 @@ export default function HomePage() {
     poster="./images/a6.png"
     loop
   />
-  <h1
-    className={title()}
-    style={{
-      position: 'absolute',
-      top: '66%', // Position the h1 vertically
-      left: '50%', // Position the h1 in the middle horizontally
-      transform: 'translateX(-50%)', // Center the h1 horizontally
-      color: 'white', // Text color
-      fontSize: '2rem', // Font size
-      zIndex: 10, // Ensure it's above the image
-    }}
-  >
-    Joes Italian Kitchen
-  </h1>
-  {/* <h2
-    style={{
-      position: 'absolute',
-      top: '50%', // Position the subtitle below the title
-      left: '50%', // Position the subtitle in the middle horizontally
-      transform: 'translateX(-50%)', // Center the subtitle horizontally
-      color: 'white', // Text color
-      fontSize: '1.5rem', // Font size
-      zIndex: 10, // Ensure it's above the image
-    }}
-  >
-    Almonte, Nepean, & Wellington
-  </h2> */}
-  <div
-    style={{
-      position: 'absolute',
-      top: '33%', // Position the buttons below the subtitle
-      left: '50%', // Position the buttons in the middle horizontally
-      transform: 'translateX(-50%)', // Center the buttons horizontally
-      zIndex: 10, // Ensure it's above the image
-    }}
-  >
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
-      Orders
-    </button>
-    <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-      Reservations
-    </button>
-  </div>
+  
+  
+  
 </div>
 
 
