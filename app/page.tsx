@@ -5,30 +5,59 @@ export default function HomePage() {
 	return (
 		<div>
 <div style={{ position: 'relative' }}>
-<video
-					className="w-full h-40 object-cover border-b-gray-700"
-					style={{ opacity: 0.75, height: '28vh' }}
-					src="./video/almonte1.mp4"
-					autoPlay
-					poster="./images/a6.png"
-					loop
-				/>
-				<h1
-					className={title()}
-					style={{
-
-						position: 'absolute',
-						top: '50%', // Position the h1 in the middle vertically
-						left: '25%', // Position the h1 in the middle horizontally
-						transform: 'translate(-50%, -50%)', // Center the h1
-						color: 'white', // Text color
-						fontSize: '2rem', // Font size
-						zIndex: 10, // Ensure it's above the image
-					}}
-				>
-					Joe's Italian Kitchen
-				</h1>
+  <video
+    className="w-full h-40 object-cover border-b-gray-700"
+    style={{ opacity: 0.75, height: '35vh' }}
+    src="./video/almonte1.mp4"
+    autoPlay
+    poster="./images/a6.png"
+    loop
+  />
+  <h1
+    className={title()}
+    style={{
+      position: 'absolute',
+      top: '25%', // Position the h1 in the middle vertically
+      left: '50%', // Position the h1 in the middle horizontally
+      transform: 'translate(-50%, -50%)', // Center the h1
+      color: 'white', // Text color
+      fontSize: '2rem', // Font size
+      zIndex: 10, // Ensure it's above the image
+    }}
+  >
+    Joe's Italian Kitchen
+  </h1>
+  <h2
+    style={{
+      position: 'absolute',
+      top: '50%', // Position the subtitle below the title
+      left: '50%', // Position the subtitle in the middle horizontally
+      transform: 'translate(-50%, -50%)', // Center the subtitle
+      color: 'white', // Text color
+      fontSize: '1.5rem', // Font size
+      zIndex: 10, // Ensure it's above the image
+    }}
+  >
+    Almonte, Nepean, & Wellington
+  </h2>
+  <div
+    style={{
+      position: 'absolute',
+      top: '75%', // Position the buttons below the subtitle
+      left: '50%', // Position the buttons in the middle horizontally
+      transform: 'translate(-50%, -50%)', // Center the buttons
+      zIndex: 10, // Ensure it's above the image
+    }}
+  >
+    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+      Orders
+    </button>
+    <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+      Reservations
+    </button>
+  </div>
 </div>
+
 
 
 
