@@ -11,19 +11,6 @@ export default function HomePage() {
 
 
 
-<div style={{ position: 'relative', width: '100%' }}>
-  <video
-    className="w-full h-40 object-cover border-b-gray-700"
-    style={{ opacity: 0.75, height: '35vh' }}
-    src="./video/almonte1.mp4"
-    poster="./images/a6.png"
-	autoPlay
-    loop
-  />
-  
-  
-  
-</div>
 
 
 
@@ -73,6 +60,19 @@ export default function HomePage() {
 
 
 
+			<div style={{ position: 'relative', width: '100%' }}>
+  <video
+    className="w-full h-40 object-cover border-b-gray-700"
+    style={{ opacity: 0.75, height: '35vh' }}
+    src="./video/almonte1.mp4"
+    poster="./images/a6.png"
+	autoPlay
+    loop
+  />
+  
+  
+  
+</div>
 
 
 
