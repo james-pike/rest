@@ -8,6 +8,12 @@ export default function MenuLayout({
 	children: React.ReactNode;
 }) {
 	return (
+<html>
+		<head>
+			
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		</head> 
 		<footer className="flex w-full flex-col">
 		<div className="mx-auto sm:px-6 pb-8 lg:px-8 ">
 		<img className="w-full h-40 object-cover border-b" src="./images/p1.jpg" />
@@ -29,5 +35,7 @@ export default function MenuLayout({
 			</div>
 		</div>
 	</footer>
+
+	</html>
 	);
 }
