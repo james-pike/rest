@@ -83,7 +83,7 @@ export default function BasicFooter() {
 
   return (
     <footer className="flex w-full flex-col">
-      <div className="mx-auto px-6 pb-8 pt-12 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto px-5 pb-8 pt-6 sm:pt-24 lg:px-8 lg:pt-32">
         
         
         
@@ -102,7 +102,7 @@ export default function BasicFooter() {
 
 
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 md:pr-8">
+          <div className="space-y-5 md:pr-8">
             <div className="flex items-center justify-start">
               <AcmeIcon size={44} />
               {/* <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> */}
@@ -166,7 +166,7 @@ export default function BasicFooter() {
           </form>
         </div> */}
 
-        <div className="flex flex-wrap justify-between gap-2 pt-8">
+        <div className="flex flex-wrap justify-between gap-2 pt-6">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
           <ThemeSwitch />
         </div>
