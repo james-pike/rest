@@ -10,7 +10,7 @@ export default function HomePage() {
 					style={{ opacity: 0.75, height: '35vh' }}
 					src="./video/almonte1.mp4"
 					autoPlay
-					poster="./images/poster.png"
+					poster="./images/a5.jpg"
 					loop
 				/>
 				{/* <div className="border"></div> */}
@@ -93,7 +93,7 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border-t"></div>
+			<div className="border-t border-gray-700"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
