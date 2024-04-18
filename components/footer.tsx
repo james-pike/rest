@@ -120,7 +120,7 @@ export default function BasicFooter() {
               ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          {/* <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>{renderList({title: "Menus", items: footerNavigation.services})}</div>
               <div className="mt-10 md:mt-0">
@@ -133,7 +133,7 @@ export default function BasicFooter() {
                 {renderList({title: "Legal", items: footerNavigation.legal})}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 {/* 
         <div className="my-10 rounded-medium bg-default-200/20 p-4 sm:my-14 sm:p-8 lg:my-16 lg:flex lg:items-center lg:justify-between lg:gap-2">
@@ -166,7 +166,7 @@ export default function BasicFooter() {
           </form>
         </div> */}
 
-        <div className="flex flex-wrap justify-between gap-2 pt-12">
+        <div className="flex flex-wrap justify-between gap-2 pt-8">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
           <ThemeSwitch />
         </div>
