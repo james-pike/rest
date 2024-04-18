@@ -7,7 +7,7 @@ export default function HomePage() {
 
 <video
 					className="w-full h-40 object-cover border-b"
-					style={{ opacity: 0.75, height: '40vh' }}
+					style={{ opacity: 0.75, height: '35vh' }}
 					src="./video/almonte1.mp4"
 					autoPlay
 					poster="./images/poster.png"
