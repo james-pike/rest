@@ -116,7 +116,7 @@ export default function BasicNavbar(props: NavbarProps) {
         {isMenuOpen && <ThemeDropdown />}
       </NavbarContent>
 
-      <NavbarMenuToggle className="text-white md:hidden" />
+      <NavbarMenuToggle className="text-white md:hidden" style={{ outline: 'none' }}/>
 
       <NavbarMenu
         className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
