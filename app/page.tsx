@@ -5,11 +5,33 @@ export default function HomePage() {
 	return (
 		<div>
 
+
+
+
+
+
+
+<div style={{ position: 'relative', width: '100%' }}>
+  <video
+    className="w-full h-40 object-cover border-b-gray-700"
+    style={{ opacity: 0.75, height: '35vh' }}
+    src="./video/almonte1.mp4"
+    poster="./images/a6.png"
+    loop
+  />
+  
+  
+  
+</div>
+
+
+
+
 <div style={{ position: 'relative' }}>
 				<img
 					className="w-full h-40 object-cover border-black"
 					style={{ opacity: 0.75, height: '40vh' }}
-					src="./images/p1.jpg"
+					src="./images/events3.jpg"
 					alt="Background Image"
 				/>
 				<h1
@@ -45,28 +67,6 @@ export default function HomePage() {
     </button>
   </div>
 			</div>
-
-
-
-
-
-
-
-
-
-
-<div style={{ position: 'relative', width: '100%' }}>
-  <video
-    className="w-full h-40 object-cover border-b-gray-700"
-    style={{ opacity: 0.75, height: '35vh' }}
-    src="./video/almonte1.mp4"
-    poster="./images/a6.png"
-    loop
-  />
-  
-  
-  
-</div>
 
 
 
