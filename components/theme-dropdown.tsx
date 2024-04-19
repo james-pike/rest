@@ -14,7 +14,7 @@ export default function ThemeDropdown({  }) {
         <Button variant="bordered" className="h-8 bg-foreground-100 hover:bg-foreground-200 px-2">
           <div className="flex items-center gap-1 text">
             <SlLocationPin />
-            <div className="md:flex">
+            <div className="md:flex text-xs">
               <p>Wellington</p>
             </div>
           </div>
@@ -27,7 +27,7 @@ export default function ThemeDropdown({  }) {
           
           startContent={<PiForkKnifeFill />}
         >
-        • Almonte
+        Almonte
         </DropdownItem>
         <DropdownItem
           key="nepean"
@@ -35,7 +35,7 @@ export default function ThemeDropdown({  }) {
          
           startContent={<PiForkKnifeFill />}
         >
-          • Nepean
+          Nepean
         </DropdownItem>
         <DropdownItem
           key="wellington"
@@ -43,7 +43,7 @@ export default function ThemeDropdown({  }) {
       
           startContent={<PiForkKnifeFill />}
         >
-          • Welllington
+          Welllington
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>

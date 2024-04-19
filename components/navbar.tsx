@@ -143,7 +143,7 @@ export default function BasicNavbar(props: NavbarProps) {
             onClick={handleMenuItemClick} // Close menu when clicked
           >
             <PiForkKnifeFill />
-            Orders
+            ORDERS
           </Button>
         </NavbarMenuItem>
         <NavbarMenuItem className="mb-4">
@@ -157,7 +157,7 @@ export default function BasicNavbar(props: NavbarProps) {
             onClick={handleMenuItemClick} // Close menu when clicked
           >
             <PiForkKnifeFill />
-            Reservations
+            RESERVATIONS
           </Button>
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
