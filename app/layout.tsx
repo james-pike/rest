@@ -59,6 +59,7 @@ export default function RootLayout({
 
 					<div className="relative w-full flex flex-col h-screen">
 				
+				<BasicNavbar />
 						<Tabs2 />
 					    
 						<main className="">
