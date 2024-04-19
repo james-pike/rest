@@ -57,7 +57,7 @@ export default function HomePage() {
 			</div>
 
 
-			 <div className="border-8 border-black"></div>
+			 <div className="border-4 border-black"></div>
 
 
 			 <a href="/menu" style={{ textDecoration: 'none' }}>
@@ -88,7 +88,7 @@ export default function HomePage() {
 			</a>
 
 
-<div className="border-8 border-black"></div>
+<div className="border-4 border-black"></div>
 
 
 <a href="/locations" style={{ textDecoration: 'none' }}>
@@ -118,7 +118,7 @@ export default function HomePage() {
 
 			</a>
 
-			<div className="border-8 border-black"></div>
+			<div className="border-4 border-black"></div>
 
 
 
@@ -146,7 +146,7 @@ export default function HomePage() {
 				</h1>
 			</div>
 
-			<div className="border-8 border-black"></div>
+			<div className="border-4 border-black"></div>
 
 			<div style={{ position: 'relative' }}>
 				<img
@@ -179,7 +179,7 @@ export default function HomePage() {
 
 
 
-			<div className="border-8 border-black"></div>
+			<div className="border-4 border-black"></div>
 
 
 <BasicFooter/>
