@@ -28,7 +28,7 @@ export default function MenuLayout({
               <ThemeDropdown />
             </div>
             <p className="text-small text-default-500 pb-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
             </p>
             <h1>Apetizers</h1>
            
