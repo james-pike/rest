@@ -111,7 +111,7 @@ export default function MenuFooter() {
           </div>
        
         </div>
-        <List2/>
+      
         {/* <List2 /> */}
        
 
