@@ -18,9 +18,13 @@ import {
 import {Icon} from "@iconify/react";
 
 import countries from "./countries";
+import List2 from "./list2";
 
 export default function Antipasti(props: CardProps) {
   return (
-   <div></div>
+   <div>
+
+    <List2/>
+   </div>
   );
 }

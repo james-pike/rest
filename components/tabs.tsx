@@ -7,11 +7,13 @@ import {Card, Tabs, Tab} from "@nextui-org/react";
 import {Icon} from "@iconify/react";
 
 import AccountDetails from "./account-details";
-import NotificationsSettings from "./notification-settings";
+import NotificationsSettings from "./insalata";
 import SecuritySettings from "./security-settings";
 import { AcmeIcon } from "@/social";
 import ThemeDropdown from "./theme-dropdown";
 import Antipasti from "./antipasti";
+import Beverages from "./beverages";
+import Desserts from "./desserts";
 
 export default function Tab1(props: CardProps) {
   return (
@@ -48,7 +50,7 @@ export default function Tab1(props: CardProps) {
           <Antipasti className="p-2  shadow-none" />
         </Tab>
         <Tab
-          key="notifications-settings"
+          key="insalata"
           textValue="Notification Settings"
           title={
             <div className="flex items-center gap-1.5">
@@ -60,7 +62,7 @@ export default function Tab1(props: CardProps) {
           <NotificationsSettings className="p-2  shadow-none" />
         </Tab>
         <Tab
-          key="notifications-settings"
+          key="pasta"
           textValue="Notification Settings"
           title={
             <div className="flex items-center gap-1.5">
@@ -72,7 +74,7 @@ export default function Tab1(props: CardProps) {
           <NotificationsSettings className="p-2  shadow-none" />
         </Tab>
         <Tab
-          key="notifications-settings"
+          key="pinsa"
           textValue="Notification Settings"
           title={
             <div className="flex items-center gap-1.5">
@@ -84,7 +86,7 @@ export default function Tab1(props: CardProps) {
           <NotificationsSettings className="p-2  shadow-none" />
         </Tab>
         <Tab
-          key="security-settings"
+          key="desserts"
           textValue="Security Settings"
           title={
             <div className="flex items-center gap-1.5">
@@ -93,7 +95,19 @@ export default function Tab1(props: CardProps) {
             </div>
           }
         >
-          <SecuritySettings className="p-2  shadow-none" />
+          <Desserts className="p-2  shadow-none" />
+        </Tab>
+        <Tab
+          key="drinks"
+          textValue="Security Settings"
+          title={
+            <div className="flex items-center gap-1.5">
+              <Icon icon="solar:shield-keyhole-bold" width={20} />
+              <p>Beverages</p>
+            </div>
+          }
+        >
+          <Beverages className="p-2  shadow-none" />
         </Tab>
       </Tabs>
       </div>
