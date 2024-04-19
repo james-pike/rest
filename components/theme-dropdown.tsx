@@ -1,6 +1,7 @@
 import React from "react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
 import { SlLocationPin } from "react-icons/sl";
+import { PiForkKnifeFill } from "react-icons/pi";
 
 
 
@@ -24,25 +25,25 @@ export default function ThemeDropdown({  }) {
           key="almonte"
           shortcut="⌘N"
           
-          startContent={<SlLocationPin className={iconClasses} />}
+          startContent={<PiForkKnifeFill />}
         >
-          Almonte
+        • Almonte
         </DropdownItem>
         <DropdownItem
           key="nepean"
           shortcut="⌘C"
          
-          startContent={<SlLocationPin className={iconClasses} />}
+          startContent={<PiForkKnifeFill />}
         >
-          Nepean
+          • Nepean
         </DropdownItem>
         <DropdownItem
           key="wellington"
           shortcut="⌘⇧E"
       
-          startContent={<SlLocationPin className={iconClasses} />}
+          startContent={<PiForkKnifeFill />}
         >
-          Welllington
+          • Welllington
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
