@@ -9,12 +9,22 @@ import {Icon} from "@iconify/react";
 import AccountDetails from "./account-details";
 import NotificationsSettings from "./notification-settings";
 import SecuritySettings from "./security-settings";
+import { AcmeIcon } from "@/social";
+import ThemeDropdown from "./theme-dropdown";
 
 export default function Tab1(props: CardProps) {
   return (
     
     <Card {...props}>
               <div style={{ overflowX: 'auto' }}> {/* Container for tabs */}
+
+              <div className="flex items-center justify-between">
+  <div className="flex items-center"> {/* New nested flex container */}
+    <AcmeIcon size={44} />
+    <span className="text-medium px-1 font-medium">Menu: Wellington</span>
+  </div>
+  <ThemeDropdown />
+</div>
       <Tabs
         classNames={{
             tabList: "mx-4 mt-6 text-medium grid grid-cols-3 gap-4", // Allow tabs to wrap
