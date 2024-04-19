@@ -46,13 +46,21 @@ export default function HomePage() {
       zIndex: 10, // Ensure it's above the image
     }}
   >
+
+	<a href="https://joesitaliankitchen-1asc.mobi2go.com">
     <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
       Orders
     </button>
+
+	</a>
 	<div className="pt-2"></div>
+
+	<a href="https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364">
     <button className="bg-black hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
       Reservations
     </button>
+
+	</a>
   </div>
 			</div>
 
