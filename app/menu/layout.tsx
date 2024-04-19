@@ -14,9 +14,9 @@ export default function MenuLayout({
 	return (
 
 		<div>
-			<img className="w-full h-10 object-cover border-b" src="./images/w1.jpg" />
+			{/* <img className="w-full h-10 object-cover border-b" src="./images/w1.jpg" /> */}
 			<footer className="flex w-full flex-col border-t-2 border-white">
-				<div className="mx-auto px-5 pb-8 pt-6 sm:pt-24 lg:px-8 lg:pt-32">
+				<div className="mx-auto px-4 pb-8 pt-7 sm:pt-24 lg:px-8 lg:pt-32">
 
 
 
