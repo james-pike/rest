@@ -11,6 +11,7 @@ import ThemeSwitch from "../theme-switch";
 import AboutPage from "@/app/about/page";
 import ThemeDropdown from "./theme-dropdown";
 import List1 from "./list1";
+import List2 from "./list2";
 
 type SocialIconProps = Omit<IconProps, "icon">;
 
@@ -156,6 +157,7 @@ export default function MenuFooter() {
         </div> */}
 
         <List1 />
+        <List2 />
 
         <div className="flex flex-wrap justify-between gap-2 pt-5">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
