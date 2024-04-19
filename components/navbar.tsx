@@ -121,10 +121,6 @@ export default function BasicNavbar(props: NavbarProps) {
 
       <NavbarMenu
   className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-black pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-black"
-  style={{
-    borderTop: 'none', // Remove top border
-    borderBottom: '1px solid var(--nextui-border)',
-  }}
   motionProps={{
     initial: { opacity: 0, y: -20 },
     animate: { opacity: 1, y: 0 },
