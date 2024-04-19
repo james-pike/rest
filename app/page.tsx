@@ -57,26 +57,6 @@ export default function HomePage() {
 			</div>
 
 
-
-{/* 
-
-			<div style={{ position: 'relative', width: '100%' }}>
-  <video
-    className="w-full h-40 object-cover border-b-gray-700"
-    style={{ opacity: 0.75, height: '35vh' }}
-    src="./video/almonte1.mp4"
-    poster="./images/a6.png"
-	autoPlay
-    loop
-  />
-  
-  
-  
-</div> */}
-
-
-
-
 			 <div className="border-8 border-black"></div>
 
 
@@ -191,6 +171,13 @@ export default function HomePage() {
 					Catering
 				</h1>
 			</div>
+
+
+
+		
+
+
+
 
 			<div className="border-8 border-black"></div>
 
