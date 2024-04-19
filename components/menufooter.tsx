@@ -85,6 +85,11 @@ export default function MenuFooter() {
   );
 
   return (
+    <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        </head>
     <footer className="flex w-full flex-col border-t-2 border-white">
       <div className="mx-auto px-5 pb-8 pt-6 sm:pt-24 lg:px-8 lg:pt-32">
         
@@ -165,5 +170,6 @@ export default function MenuFooter() {
         </div>
       </div>
     </footer>
+    </html>
   );
 }
