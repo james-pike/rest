@@ -19,7 +19,7 @@ export default function MenuLayout({
 		<div>
 			<img className="w-full h-40 object-cover border-b" src="./images/p1.jpg" />
 			<MenuFooter/>
-<List2/>
+
 		
 	
 	</div>
