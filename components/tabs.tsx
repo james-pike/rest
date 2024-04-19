@@ -26,7 +26,7 @@ export default function Tab1(props: CardProps) {
           title={
             <div className="flex items-center gap-1.5">
               <Icon icon="solar:user-id-bold" width={20} />
-              <p>Account</p>
+              <p>Antipasti</p>
             </div>
           }
         >
@@ -38,7 +38,31 @@ export default function Tab1(props: CardProps) {
           title={
             <div className="flex items-center gap-1.5">
               <Icon icon="solar:bell-bold" width={20} />
-              <p>Notifications</p>
+              <p>Insalata</p>
+            </div>
+          }
+        >
+          <NotificationsSettings className="p-2  shadow-none" />
+        </Tab>
+        <Tab
+          key="notifications-settings"
+          textValue="Notification Settings"
+          title={
+            <div className="flex items-center gap-1.5">
+              <Icon icon="solar:bell-bold" width={20} />
+              <p>Pasta</p>
+            </div>
+          }
+        >
+          <NotificationsSettings className="p-2  shadow-none" />
+        </Tab>
+        <Tab
+          key="notifications-settings"
+          textValue="Notification Settings"
+          title={
+            <div className="flex items-center gap-1.5">
+              <Icon icon="solar:bell-bold" width={20} />
+              <p>Pinsa</p>
             </div>
           }
         >
@@ -50,7 +74,7 @@ export default function Tab1(props: CardProps) {
           title={
             <div className="flex items-center gap-1.5">
               <Icon icon="solar:shield-keyhole-bold" width={20} />
-              <p>Security</p>
+              <p>Desserts</p>
             </div>
           }
         >
