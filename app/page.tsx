@@ -50,7 +50,6 @@ export default function HomePage() {
 
 	<a href="https://joesitaliankitchen-1asc.mobi2go.com">
     <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
-	<PiForkKnifeFill />
       Orders
     </button>
 
@@ -59,7 +58,7 @@ export default function HomePage() {
 
 	<a href="https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364">
     <button className="bg-black hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-	<PiForkKnifeFill />
+		
       Reservations
     </button>
 	
