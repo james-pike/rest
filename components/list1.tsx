@@ -16,6 +16,10 @@ const productsWithRatingsAndDescription = products.map((product) => ({
 
 export default function List1() {
   return (
+    <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        </head>
     <div className="my-auto flex w-full max-w-7xl flex-col items-start gap-2">
       <ScrollShadow
         className="-mx-6 -my-5 flex w-full max-w-full snap-x justify-start gap-6 px-6 py-5"
@@ -27,5 +31,6 @@ export default function List1() {
         ))}
       </ScrollShadow>
     </div>
+    </html>
   );
 }
