@@ -100,20 +100,21 @@ export default function MenuFooter() {
             <div className="flex items-center justify-between">
               <AcmeIcon size={44} />
               {/* <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> */}
-              <span className="text-medium px-1 font-medium">Menu</span>
+              <span className="text-medium px-1 font-medium">Menu: Wellington</span>
               <ThemeDropdown />
             </div>
             <p className="text-small text-default-500 pb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
             </p>
-            <div className="flex space-x-6">
+            <h1>Apetizers</h1>
+            {/* <div className="flex space-x-6">
               {footerNavigation.social.map((item) => (
                 <Link key={item.name} isExternal className="text-default-400" href={item.href}>
                   <span className="sr-only">{item.name}</span>
                   <item.icon aria-hidden="true" className="w-6" />
                 </Link>
               ))}
-            </div>
+            </div> */}
           </div>
           {/* <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -161,8 +162,9 @@ export default function MenuFooter() {
           </form>
         </div> */}
 
-        <List1 />
+        {/* <List1 /> */}
         <List2 />
+       
 
         <div className="flex flex-wrap justify-between gap-2 pt-5">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
