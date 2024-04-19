@@ -1,8 +1,12 @@
+'use client';
+
 import BasicFooter from "@/components/footer";
 import MenuFooter from "@/components/menufooter";
 import { AcmeIcon } from "@/social";
 import ThemeSwitch from "@/theme-switch";
 import Link from "next/link";
+
+
 
 export default function MenuLayout({
 	children,
