@@ -22,12 +22,14 @@ export default function MenuLayout({
 
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-3 md:pr-8">
-            <div className="flex items-center justify-between">
-              <AcmeIcon size={44} />
-              
-              <span className="text-medium px-1 font-medium">Menu: Wellington</span>
-              <ThemeDropdown />
-            </div>
+          <div className="flex items-center justify-between">
+  <div className="flex items-center"> {/* New nested flex container */}
+    <AcmeIcon size={44} />
+    <span className="text-medium px-1 font-medium">Menu: Wellington</span>
+  </div>
+  <ThemeDropdown />
+</div>
+
             <p className="text-small text-default-500 pb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing menu neque elit, tristique  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
             </p>

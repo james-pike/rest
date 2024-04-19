@@ -9,6 +9,7 @@ import {Icon} from "@iconify/react";
 import SwitchCell from "./switch-cell";
 import CellWrapper from "./cell-wrapper";
 
+
 export default function Component(props: CardProps) {
   return (
     <Card className="w-full max-w-lg p-2" {...props}>
