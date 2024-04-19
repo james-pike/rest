@@ -99,7 +99,7 @@ export default function MenuFooter() {
           <div className="space-y-3 md:pr-8">
             <div className="flex items-center justify-between">
               <AcmeIcon size={44} />
-              {/* <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> */}
+              
               <span className="text-medium px-1 font-medium">Menu: Wellington</span>
               <ThemeDropdown />
             </div>
@@ -107,69 +107,18 @@ export default function MenuFooter() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
             </p>
             <h1>Apetizers</h1>
-            {/* <div className="flex space-x-6">
-              {footerNavigation.social.map((item) => (
-                <Link key={item.name} isExternal className="text-default-400" href={item.href}>
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon aria-hidden="true" className="w-6" />
-                </Link>
-              ))}
-            </div> */}
+           
           </div>
-          {/* <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>{renderList({title: "Menus", items: footerNavigation.services})}</div>
-              <div className="mt-10 md:mt-0">
-                {renderList({title: "About", items: footerNavigation.supportOptions})}
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>{renderList({title: "Locations", items: footerNavigation.aboutUs})}</div>
-              <div className="mt-10 md:mt-0">
-                {renderList({title: "Legal", items: footerNavigation.legal})}
-              </div>
-            </div>
-          </div> */}
+       
         </div>
-{/* 
-        <div className="my-10 rounded-medium bg-default-200/20 p-4 sm:my-14 sm:p-8 lg:my-16 lg:flex lg:items-center lg:justify-between lg:gap-2">
-          <div>
-            <h3 className="text-small font-semibold text-default-600">
-              Subscribe to our newsletter
-            </h3>
-            <p className="mt-2 text-small text-default-400">
-              Receive weekly updates with the newest insights, trends, and tools, straight to your
-              email.
-            </p>
-          </div>
-          <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
-            <Input
-              isRequired
-              aria-label="Email"
-              autoComplete="email"
-              id="email-address"
-              labelPlacement="outside"
-              name="email-address"
-              placeholder="name@email.com"
-              startContent={<Icon className="text-default-500" icon="solar:letter-linear" />}
-              type="email"
-            />
-            <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-              <Button color="primary" type="submit">
-                Subscribe
-              </Button>
-            </div>
-          </form>
-        </div> */}
-
-        {/* <List1 /> */}
-        <List2 />
+        <List2/>
+        {/* <List2 /> */}
        
 
-        <div className="flex flex-wrap justify-between gap-2 pt-5">
+        {/* <div className="flex flex-wrap justify-between gap-2 pt-5">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
           <ThemeSwitch />
-        </div>
+        </div> */}
       </div>
     </footer>
     </html>
