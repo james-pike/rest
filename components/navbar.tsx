@@ -162,9 +162,9 @@ export default function BasicNavbar(props: NavbarProps) {
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="mb-2 w-full text-foreground" href={item.route} size="md" onClick={handleMenuItemClick}>
-              {item.name}
-            </Link>
+           <Link className="mb-2 w-full text-foreground" href={item.route} size="md" onClick={handleMenuItemClick}>
+    <span style={{ marginRight: '5px' }}><PiForkKnifeFill/></span> {item.name}
+</Link>
             {index < menuItems.length - 1 && <Divider className="opacity-50" />}
           </NavbarMenuItem>
         ))}
