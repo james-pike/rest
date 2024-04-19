@@ -11,6 +11,7 @@ import NotificationsSettings from "./notification-settings";
 import SecuritySettings from "./security-settings";
 import { AcmeIcon } from "@/social";
 import ThemeDropdown from "./theme-dropdown";
+import Antipasti from "./antipasti";
 
 export default function Tab1(props: CardProps) {
   return (
@@ -35,7 +36,7 @@ export default function Tab1(props: CardProps) {
         size="lg"
       >
         <Tab
-          key="account-settings"
+          key="antipasti"
           textValue="Account Settings"
           title={
             <div className="flex items-center gap-1.5">
@@ -44,7 +45,7 @@ export default function Tab1(props: CardProps) {
             </div>
           }
         >
-          <AccountDetails className="p-2  shadow-none" />
+          <Antipasti className="p-2  shadow-none" />
         </Tab>
         <Tab
           key="notifications-settings"
