@@ -18,16 +18,18 @@ export default function Tab1(props: CardProps) {
     <Card {...props}>
               <div style={{ overflowX: 'auto' }}> {/* Container for tabs */}
 
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between px-3 pt-2">
   <div className="flex items-center"> {/* New nested flex container */}
     <AcmeIcon size={44} />
-    <span className="text-medium px-1 font-medium">Menu: Wellington</span>
+    <span className="text-lg px-1 font-medium">Menu</span>
   </div>
   <ThemeDropdown />
 </div>
+
+<p className="px-6 pt-3 pb-1">Lorem dsofij sdofij sdfoijsdofi sdofijsodif sodifjsodf sodifjsoidjf sdofisodijf sdoifjsdoifj</p>
       <Tabs
         classNames={{
-            tabList: "mx-4 mt-6 text-medium grid grid-cols-3 gap-4", // Allow tabs to wrap
+            tabList: "mx-4 mt-4 text-medium grid grid-cols-3 gap-4", // Allow tabs to wrap
           tabContent: "text-small",
         }}
         size="lg"
