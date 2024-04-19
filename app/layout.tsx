@@ -9,6 +9,7 @@ import BasicFooter from "@/components/footer";
 import Component from "@/components/list";
 import Wedge from "@/components/wedge";
 import WedgeX from "@/components/x";
+import Tabs2 from "@/components/tabs2";
 
 export const metadata: Metadata = {
 	title: {
@@ -50,7 +51,7 @@ export default function RootLayout({
 			</head> 
 			<body
 				className={clsx(
-					" bg-background font-sans antialiased",
+					"min-h-screen bg-background font-sans antialiased",
 					fontSans.variable
 				)}
 			>
@@ -58,7 +59,7 @@ export default function RootLayout({
 
 					<div className="relative w-full flex flex-col h-screen">
 				
-						<BasicNavbar />
+						<Tabs2 />
 					    
 						<main className="">
 							{children}

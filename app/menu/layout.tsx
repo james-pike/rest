@@ -1,6 +1,7 @@
 import BasicFooter from "@/components/footer";
 import List2 from "@/components/list2";
 import Tab1 from "@/components/tabs";
+import Tabs2 from "@/components/tabs2";
 import ThemeDropdown from "@/components/theme-dropdown";
 import { AcmeIcon } from "@/social";
 import ThemeSwitch from "@/theme-switch";
@@ -28,7 +29,7 @@ export default function MenuLayout({
               Lorem ipsum dolor sit amet, consectetur adipiscing menu neque elit, tristique  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
             </p> */}
 
-
+						{/* <Tabs2 /> */}
 							<Tab1 />
 
 						
