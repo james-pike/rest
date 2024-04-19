@@ -12,15 +12,12 @@ import SecuritySettings from "./security-settings";
 
 export default function Tab1(props: CardProps) {
   return (
-    <html>
-        <head>
-               	
-			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-        </head>
+    
     <Card {...props}>
+              <div style={{ overflowX: 'auto' }}> {/* Container for tabs */}
       <Tabs
         classNames={{
-          tabList: "mx-4 mt-6 text-medium",
+            tabList: "mx-4 mt-6 text-medium grid grid-cols-3 gap-4", // Allow tabs to wrap
           tabContent: "text-small",
         }}
         size="lg"
@@ -86,7 +83,7 @@ export default function Tab1(props: CardProps) {
           <SecuritySettings className="p-2  shadow-none" />
         </Tab>
       </Tabs>
+      </div>
     </Card>
-    </html>
   );
 }

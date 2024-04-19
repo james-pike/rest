@@ -5,6 +5,11 @@ import React from "react";
 
 const CellWrapper = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({children, className, ...props}, ref) => (
+    <html>
+    <head>
+               
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
     <div
       ref={ref}
       className={cn(
@@ -15,6 +20,7 @@ const CellWrapper = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDi
     >
       {children}
     </div>
+    </html>
   ),
 );
 
