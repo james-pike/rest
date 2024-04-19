@@ -15,8 +15,10 @@ export default function MenuLayout({
 	return (
 
 		<div>
+
+			<Tabs2 />
 			 {/* <img className="w-full h-10 object-cover border-b" src="./images/w1.jpg" />  */}
-			<footer className="flex w-full flex-col border-t-2 border-white">
+			<footer className="flex w-full flex-col border-t border-gray-700">
 				<div className="mx-auto px-2 pb-8 pt-4 sm:pt-24 lg:px-8 lg:pt-32">
 
 
@@ -30,7 +32,7 @@ export default function MenuLayout({
             </p> */}
 
 						{/* <Tabs2 /> */}
-							<Tab1 />
+							{/* <Tab1 /> */}
 
 						
 
