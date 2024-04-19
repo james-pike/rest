@@ -19,7 +19,7 @@ export default function HomePage() {
 				<img
 					className="w-full h-40 object-cover border-black"
 					style={{ opacity: 0.75, height: '40vh' }}
-					src="./images/events3.jpg"
+					src="./images/a6.png"
 					alt="Background Image"
 				/>
 				<h1
@@ -28,10 +28,10 @@ export default function HomePage() {
 
 						position: 'absolute',
 						top: '40%', // Position the h1 in the middle vertically
-						left: '50%', // Position the h1 in the middle horizontally
-						transform: 'translate(-50%, -50%)', // Center the h1
+						left: '20%', // Position the h1 in the middle horizontally
+						transform: 'translate(-20%, -50%)', // Center the h1
 						color: 'white', // Text color
-						fontSize: '2rem', // Font size
+						fontSize: '3rem', // Font size
 						zIndex: 10, // Ensure it's above the image
 					}}
 				>
@@ -41,16 +41,16 @@ export default function HomePage() {
     style={{
       position: 'absolute',
       top: '60%', // Position the buttons below the subtitle
-      left: '50%', // Position the buttons in the middle horizontally
-      transform: 'translateX(-50%)', // Center the buttons horizontally
+      left: '20%', // Position the buttons in the middle horizontally
+      transform: 'translateX(-20%)', // Center the buttons horizontally
       zIndex: 10, // Ensure it's above the image
     }}
   >
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+    <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
       Orders
     </button>
 	<div className="pt-2"></div>
-    <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+    <button className="bg-black hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
       Reservations
     </button>
   </div>
@@ -58,7 +58,7 @@ export default function HomePage() {
 
 
 
-
+{/* 
 
 			<div style={{ position: 'relative', width: '100%' }}>
   <video
@@ -72,7 +72,7 @@ export default function HomePage() {
   
   
   
-</div>
+</div> */}
 
 
 
