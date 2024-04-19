@@ -12,6 +12,11 @@ import SecuritySettings from "./security-settings";
 
 export default function Tab1(props: CardProps) {
   return (
+    <html>
+        <head>
+               	
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        </head>
     <Card {...props}>
       <Tabs
         classNames={{
@@ -82,5 +87,6 @@ export default function Tab1(props: CardProps) {
         </Tab>
       </Tabs>
     </Card>
+    </html>
   );
 }
