@@ -30,9 +30,9 @@ export default function MenuLayout({
   <ThemeDropdown />
 </div>
 
-            <p className="text-small text-default-500 pb-2">
+            {/* <p className="text-small text-default-500 pb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing menu neque elit, tristique  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
-            </p>
+            </p> */}
           
 
 			<Tab1	/>
