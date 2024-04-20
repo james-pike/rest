@@ -1,5 +1,5 @@
 import BasicFooter from "@/components/footer";
-import { CarouselDemo } from "@/components/location-carousel";
+import { WellingtonCarousel } from "@/components/location-carousel";
 import { Carousel } from "@/components/ui/carousel";
 import { AcmeIcon } from "@/social";
 import ThemeSwitch from "@/theme-switch";
@@ -26,7 +26,7 @@ export default function AboutLayout({
       	style={{ opacity: 0.75, height: '33vh' }} 
       className="w-full  object-cover border-8 border-black" src="./images/a2.jpg" />
 
-      <CarouselDemo/>
+      <WellingtonCarousel/>
 <BasicFooter />
 		
 	
