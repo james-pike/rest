@@ -30,47 +30,53 @@ import {
   BreadcrumbItem,
   Input,
   Badge,
+  CardProps,
+  Card,
 } from "@nextui-org/react";
 import {Icon} from "@iconify/react";
 
 import {AcmeIcon} from "./social";
 
 import NotificationsCard from "./notifications-card";
+import ThemeDropdown from "./theme-dropdown";
+import Antipasti from "./antipasti";
 
-export default function Component() {
+export default function Tab2(props: CardProps) {
   return (
-    <div className="w-full">
-     
-      <main className="mt-6 flex w-full flex-col items-center">
-        <div className="w-full max-w-[1024px] px-4 lg:px-8">
-          <header className="mb-6 flex w-full items-center justify-between">
-            <div className="flex flex-col">
-              <h1 className="text-xl font-bold text-default-900 lg:text-3xl">Dashboard</h1>
-              <p className="text-small text-default-400 lg:text-medium">Manage your deployments</p>
-            </div>
-            <Button
-              className="bg-foreground text-background"
-              startContent={
-                <Icon className="flex-none text-background/60" icon="lucide:plus" width={16} />
-              }
-            >
-              New Deployment
-            </Button>
-          </header>
-          <ScrollShadow
-            hideScrollBar
-            className="-mx-2 flex w-full justify-between gap-8"
-            orientation="horizontal"
-          >
+    <Card {...props}>
+            <div style={{ overflowX: 'auto' }}> {/* Container for tabs */}
+
+                <div className="flex items-center justify-between px-5 pt-6">
+                    <div className="flex items-center"> {/* New nested flex container */}
+                        {/* <AcmeIcon size={44} /> */}
+                        <span className="text-lg px-1 font-medium">Menu</span>
+                    </div>
+                    <ThemeDropdown />
+                </div>
+
+                <p className="px-6 pt-3 pb-1">Lorem dsofij sdofij sdfoijsdofi sdofijsodif sodifjsodf sodifjsoidjf sdofisodijf sdoifjsdoifj</p>
+                <div className="overflow-x-auto w-full">
             <Tabs
-              aria-label="Navigation Tabs"
-              classNames={{
-                cursor: "bg-default-200 shadow-none",
-              }}
-              radius="full"
-              variant="light"
-            >
-              <Tab key="antipasta" title="Dashboard" />
+            classNames={{
+                tabList: "mx-4 mt-4 text-medium flex gap-4", // Allow tabs to wrap
+                tabContent: "text-small",
+            }}
+            size="lg"
+        >
+
+            
+                <Tab
+                        key="antipasti"
+                        textValue="Account Settings"
+                        title={
+                            <div className="flex items-center gap-1.5">
+                                <Icon icon="solar:user-id-bold" width={20} />
+                                <p>Antipasti</p>
+                            </div>
+                        }
+                    >
+                        <Antipasti className="p-2  shadow-none" />
+                    </Tab>
               <Tab
                 key="deployments"
                 title={
@@ -80,32 +86,16 @@ export default function Component() {
                   </div>
                 }
               />
+
+
+              
               <Tab key="analytics" title="Analytics" />
               <Tab key="team" title="Team" />
               <Tab key="settings" title="Settings" />
             </Tabs>
-            <div className="flex items-center gap-4">
-              <AvatarGroup max={3} size="sm" total={10}>
-                <Tooltip content="John" placement="bottom">
-                  <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
-                </Tooltip>
-                <Tooltip content="Mark" placement="bottom">
-                  <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
-                </Tooltip>
-                <Tooltip content="Jane" placement="bottom">
-                  <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
-                </Tooltip>
-              </AvatarGroup>
-              <Divider className="h-6" orientation="vertical" />
-              <Tooltip content="New deployment" placement="bottom">
-                <Button isIconOnly radius="full" size="sm" variant="faded">
-                  <Icon className="text-default-500" icon="lucide:plus" width={16} />
-                </Button>
-              </Tooltip>
+        
             </div>
-          </ScrollShadow>
-        </div>
-      </main>
-    </div>
+            </div>
+        </Card>
   );
 }

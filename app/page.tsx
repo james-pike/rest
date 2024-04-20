@@ -18,7 +18,7 @@ export default function HomePage() {
 
 <div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-white"
+					className="w-full h-40 object-cover border-black"
 					style={{ opacity: 0.75, height: '40vh' }}
 					src="./images/a6.png"
 					alt="Background Image"
