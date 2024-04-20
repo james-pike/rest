@@ -13,39 +13,40 @@ export default function Primtab() {
   };
 
   return (
-    
     <div className="flex w-full flex-col">
       <Tabs
         aria-label="Options"
         selectedKey={selected}
         onSelectionChange={handleTabChange} // Pass the function here
       >
-        <Tab key="photos" title="Antipasti">
+        <Tab key="photos" title="ANTIPASTI">
           <Card>
           <List2   />
           </Card>
         </Tab>
-        <Tab key="insalata" title="Insalata">
+        <Tab key="insalata" title="INSALATA">
           <Card>
            <List2   />
           </Card>
         </Tab>
-        <Tab key="pasta" title="Pasta">
+        <Tab key="pasta" title="PASTA">
           <Card>
           <List2   />
           </Card>
         </Tab>
-        <Tab key="pinsa" title="Pinsa">
+        <Tab key="pinsa" title="PINSA ROMANA">
           <Card>
           <List2   />
           </Card>
         </Tab>
-        <Tab key="desserts" title="Desserts">
+        <Tab key="desserts" title="DESSERTS">
           <Card>
-          <List2   />
+            <CardBody>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </CardBody>
           </Card>
         </Tab>
-        <Tab key="beverages" title="Beverages">
+        <Tab key="beverages" title="BEVERAGES">
           <Card>
             <CardBody>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

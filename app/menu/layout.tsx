@@ -17,7 +17,7 @@ export default function MenuLayout({
 	return (
 
 		<div>
-			<Tab2 />
+			<Tab2 className=""/>
 
 		
 		
