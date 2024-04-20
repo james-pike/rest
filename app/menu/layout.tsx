@@ -17,9 +17,8 @@ export default function MenuLayout({
 	return (
 
 		<div>
-			<Tab2 className=""/>
-
-		
+<Primtab />
+			{/* <Tab2 /> */}
 		
 		
 
