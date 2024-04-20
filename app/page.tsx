@@ -74,7 +74,7 @@ export default function HomePage() {
 			 <a href="/menu" style={{ textDecoration: 'none' }}>
 			<div style={{ position: 'relative' }}>
 				<img
-					className="w-full h-40 object-cover border-black"
+					className="w-full h-40 object-cover border-black hover:opacity-50"
 					style={{ opacity: 0.75, height: '20vh' }}
 					src="./images/p1.jpg"
 					alt="Background Image"

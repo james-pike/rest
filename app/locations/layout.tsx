@@ -1,14 +1,9 @@
 import BasicFooter from "@/components/footer";
-import List2 from "@/components/list2";
-import Tab1 from "@/components/tabs";
-import Tab2 from "@/components/tabs2";
-import Tabs2 from "@/components/tabs2";
-import ThemeDropdown from "@/components/theme-dropdown";
 import { AcmeIcon } from "@/social";
 import ThemeSwitch from "@/theme-switch";
 import Link from "next/link";
 
-export default function LocationLayout({
+export default function AboutLayout({
 	children,
 }: {
 	children: React.ReactNode;
@@ -16,12 +11,11 @@ export default function LocationLayout({
 	return (
 
 		<div>
-
-			<Tab1 />
+			<img className="w-full h-40 object-cover border-b" src="./images/p1.jpg" />
+      <img className="w-full h-80 object-cover border-12 border-black opacity-50" src="./images/w2.jpg" />
+<BasicFooter />
 		
-		
-
-
-		</div>
+	
+	</div>
 	);
 }
