@@ -22,9 +22,16 @@ import List2 from "./list2";
 
 export default function Antipasti(props: CardProps) {
   return (
+
+    <html>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      </head>
    <div>
 
-    <List2/>
+  <p> Antipasti </p>
    </div>
+   </html>
   );
 }
