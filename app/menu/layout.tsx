@@ -18,7 +18,7 @@ export default function MenuLayout({
 
 		<div>
 			<Tab2 />
-<Primtab />
+
 		
 		
 		

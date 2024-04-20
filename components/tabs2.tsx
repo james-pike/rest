@@ -40,11 +40,12 @@ import {AcmeIcon} from "./social";
 import NotificationsCard from "./notifications-card";
 import ThemeDropdown from "./theme-dropdown";
 import Antipasti from "./antipasti";
+import Primtab from "./primtab";
 
 export default function Tab2(props: CardProps) {
   return (
     <Card {...props}>
-            <div style={{ overflowX: 'auto' }}> {/* Container for tabs */}
+            <div  style={{ overflowX: 'auto' }}> {/* Container for tabs */}
 <div>
                 <div className="flex items-center justify-between px-5 pt-6">
                     <div className="flex items-center"> {/* New nested flex container */}
@@ -60,7 +61,10 @@ export default function Tab2(props: CardProps) {
      
         
             </div>
+
+            <Primtab />
             </div>
         </Card>
+        
   );
 }
