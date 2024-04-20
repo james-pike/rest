@@ -23,8 +23,8 @@ export function WellingtonCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious /> */}
+      {/* <CarouselNext /> */}
     </Carousel>
   )
 }
